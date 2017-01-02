@@ -27,7 +27,7 @@
 	</div>
 
 	<div class="form-group">
-	{!!Form::submit('Iniciar')!!}
+	{!!Form::submit('Guardar',['class'=>'btn btn-danger'])!!}
 	</div>
 	{!!Form::close()!!}
 </div>

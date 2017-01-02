@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use App\Usuario;
 use Illuminate\Http\Request;
+use Redirect;
+use Session;
+
 
 class UsuarioController extends Controller
 {
@@ -10,6 +13,7 @@ class UsuarioController extends Controller
     $usuarios= Usuario::all();
 	return view('usuario.index',compact('usuarios'));
     }
+
     public function create(){
     	return view('usuario.crear');
     }        
@@ -20,10 +24,10 @@ class UsuarioController extends Controller
  			'apellidos'=>$request['apellidos'],
  			'email'=>$request['email'],
  			'usuario'=>$request['user'],
- 			'password'=>bcrypt($request['pass']),
+ 			'password'=>$request['pass'],
     		]);
-
-    	return redirect('/user')->with('message','store');
+        Session::flash('message','Usuario creado correctamente');
+        return redirect::to('/user');     
     }
 
     public function edit($id){
@@ -31,7 +35,21 @@ class UsuarioController extends Controller
      return view('usuario.editar',['user'=>$user]);
     }
 
-    public function update(){
-     }
+    public function update($id, Request $request){
+    $user=Usuario::find($id);
+    $user->fill($request->all());
+    $user->save();
+    Session::flash('message','Usuario actualizado');
+    return redirect::to('/user');     
+    }
 
+    public function destroy($id){
+        
+    }
+
+    public function show($id){
+        Usuario::destroy($id);
+        Session::flash('message','Usuario Eliminado correctamente');
+        return redirect::to('/user');
+    }
 }

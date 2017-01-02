@@ -1,10 +1,9 @@
 @extends('admin')
 
-<?php $message=Session::get('message')?>
-@if($message=='store')
+@if(Session::has('message'))
 <div class="alert alert-success alert-dismissible" role="alert" style="width: 100%; margin-top: 100px; ">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  Usuario creado existosamente
+{{Session::get('message')}}
 </div>
 @endif
 
@@ -25,12 +24,11 @@
 			<td>{{$user->apellidos}}</td>
 			<td>{{$user->usuario}}</td>
 			<td>{{$user->estado}}</td>
-			<td>
-{!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-primary'])!!}</td>
-  </tbody> 
+			<td> {!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-primary'])!!} 
+			{!!link_to_route('user.destroy', $title = 'Eliminar',$parameters=$user->id, $attributes = ['class'=>'btn btn-danger'])!!}</td>
+    </tbody>
   @endforeach
 </table> 
-
 
 {!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-success'])!!}
 </div>

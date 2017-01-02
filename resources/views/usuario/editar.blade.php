@@ -27,14 +27,15 @@
 	</div>
     <div class="form-group">
 		{!!Form::label('Estado')!!}
-				{!!Form::text('estado',null, ['class'=>'form-control'])!!}
+		{!!Form::select('estado',['A' => 'Activo', 'I' => 'Inactivo'], ['class'=>'form-control'])!!}
 		    
 	</div>
 
 	<div class="form-group">
-	{!!Form::submit('Iniciar')!!}
+	{!!Form::submit('Actualizar', ['class'=>'btn btn-info'])!!}
 	</div>
 	{!!Form::close()!!}
-</div>
+	
+	</div>
 @section('contenido')
 
