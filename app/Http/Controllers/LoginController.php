@@ -15,9 +15,10 @@ class LoginController extends Controller
 
   public function store(Request $datos){
   	if(Auth::attempt(['usuario'=>$datos['usuariotxt'], 'password'=>$datos['password']])){
-  		return View('inicio');
+  		return View('admin');
   	}
-  	return redirect('/login')->with('message','store');
+  	Session::flash('message','Datos inv&aacute;lidos');
+        return redirect::to('/login');
 
   }
 }

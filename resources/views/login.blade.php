@@ -10,8 +10,15 @@
 
 </head>
 
+
  <body>
  <div class='preload login--container'>
+ @if(Session::has('message'))
+<div class="alert alert-success alert-dismissible" role="alert" style="width: 100%; margin-top: 100px; ">  
+{{Session::get('message')}}
+</div>
+@endif
+
   {!! Form::open(['route' => 'login.store', 'method'=>'POST']) !!}
   <div class='login--form'>
     <div class='login--username-container'>

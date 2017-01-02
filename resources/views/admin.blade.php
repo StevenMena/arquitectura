@@ -37,6 +37,7 @@
     left: 0;
     background-color: #f37752;
     width: 15%;
+    margin-top: 4%;
     position: absolute;
   }
   .sidebar .nav li > a {
