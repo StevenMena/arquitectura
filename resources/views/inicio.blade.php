@@ -2,7 +2,7 @@
 
 @section('content')
  
-  <div id="headerwrap">
+
   <div class="container"><!-- contenedor slide-->
     <br>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -42,7 +42,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+
 
   <!--    <div class="container">
       <div class="row">
@@ -188,16 +188,22 @@
       <div class="row centered">
         <h3>NUESTROS PROYECTOS</h3>
         <div class="col-lg-3 col-md-3 col-sm-3">
+        <br>
+        <br>
           <img src="img/clients/client01.png" class="img-responsive">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <img src="img/clients/client02.png" class="img-responsive">
+          <img src="img/client02.png" class="img-responsive">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <img src="img/clients/client03.png" class="img-responsive">
+          <br>
+          <br>
+          <img src="{{asset('img/clients/durman.png')}}" class="img-responsive">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <img src="img/clients/client04.png" class="img-responsive">
+        <br>
+        <br>
+          <img src="img/clients/ply01.png" class="img-responsive">
         </div>
       </div><! --/row -->
      </div><! --/container -->

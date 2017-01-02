@@ -33,14 +33,15 @@
   </style>
  
     {!!Html::script('js/script.js')!!}
- 
+    @yield('head')
+
   </head>
 
   <body>
 
     <!-- Fixed navbar -->
     <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
- <div class="container">
+    <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -66,7 +67,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">CARRERA <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="fases.html">FASES DE FORMACION</a></li>
+                <li><a href="{{route('fases')}}">FASES DE FORMACION</a></li>
                 <li><a href="single-post.html">PLAN DE ESTUDIOS</a></li>
                 <li><a href="portfolio.html">AREAS CURRICULARES</a></li>
 <!--                <li><a href="single-project.html">SINGLE PROJECT</a></li>-->
@@ -88,15 +89,7 @@
   <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <h4>Redes Sociales</h4>
-          <div class="hline-w"></div>
-          <p>
-            
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-
-          </p>
+          
         </div>
         <div align="center" class="col-lg-4">
           <p>

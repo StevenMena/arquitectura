@@ -24,15 +24,21 @@ Route::get('/nosotros', function () {
     return view('menu/nosotros');
 });
 
-Route::get('/contacto', function () {
-    return view('menu/contacto');
-});
+Route::get('/contacto',[
+    'as' => 'contacto',
+	'uses' => 'MainController@getContacto'
+]);
 
+Route::get('/gmaps', ['as ' => 'gmaps', 'uses' => 'GmapsController@index']);
 
 Route::get('/admin', function () {
     return view('admin');
 });
 
+Route::get('/fases',[
+	'as' => 'fases',
+	'uses' => 'MainController@getFases'
+]);
 /* Rutas para login*/
 Route::resource('login','LoginController');
 
