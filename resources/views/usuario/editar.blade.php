@@ -1,7 +1,11 @@
 @extends('admin')
+@section('contenido')
+
+@endsection
 
 
-<div class="form-group" style="position: relative; margin-top: 10%;">
+
+<div class="form-group" style="position:absolute; margin-left:20%; width: 75%; margin-top: 100px;">
 {!!Form::model($user,['route'=>['user.update', $user->id], 'method'=>'PUT'])!!}
 	<div class="form-group">
 		{!!Form::label('Nombre')!!}
@@ -37,5 +41,4 @@
 	{!!Form::close()!!}
 	
 	</div>
-@section('contenido')
 

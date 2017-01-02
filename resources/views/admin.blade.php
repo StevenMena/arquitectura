@@ -1,7 +1,6 @@
 @extends('master')
 
 @section('content')
-
 <style>
 
 .sidebar .sidebar-wrapper {
@@ -37,9 +36,8 @@
     transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     left: 0;
     background-color: #f37752;
-    margin-top: 5%;
     width: 15%;
-    position: relative;
+    position: absolute;
   }
   .sidebar .nav li > a {
   color: #FFFFFF;
@@ -84,7 +82,6 @@ body > .navbar-collapse .logo {
 </style>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="red" data-image="img/sidebar-5.jpg">
     	<div class="sidebar-wrapper">
 
             <ul class="nav">
@@ -117,7 +114,6 @@ body > .navbar-collapse .logo {
                 </li>
             </ul>
     	</div>
-    </div>
    </div>
 
 @yield('contenido')

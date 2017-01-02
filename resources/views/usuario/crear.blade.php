@@ -1,7 +1,8 @@
 @extends('admin')
 
+@section('contenido')
 
-<div class="form-group" style="position: relative; margin-top: 10%;">
+<div class="form-group" style="position:absolute; margin-left:20%; width: 75%; margin-top: 100px;">
 {!!Form::open(['route'=>'user.store', 'method'=>'POST'])!!}
 	<div class="form-group">
 		{!!Form::label('Nombre')!!}
@@ -31,5 +32,3 @@
 	</div>
 	{!!Form::close()!!}
 </div>
-@section('contenido')
-

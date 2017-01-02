@@ -1,5 +1,8 @@
 @extends('admin')
 
+@section('contenido')
+
+
 @if(Session::has('message'))
 <div class="alert alert-success alert-dismissible" role="alert" style="width: 100%; margin-top: 100px; ">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -7,8 +10,8 @@
 </div>
 @endif
 
-@section('contenido')
-<div class="form-group" style="width: 75%; margin-top: 100px;">
+
+<div class="form-group" style="position:absolute; margin-left:20%; width: 75%; margin-top: 100px;">
 
 <table class="table">
 	 <thead>
@@ -32,3 +35,5 @@
 
 {!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-success'])!!}
 </div>
+
+@endsection
