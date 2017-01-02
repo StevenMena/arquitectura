@@ -17,6 +17,7 @@
 		  <th>Apellidos</th>
 		  <th>Usuario</th>
 		  <th>Estado</th>
+		  <th>Opciones</th>
 	</thead>
 	@foreach($usuarios as $user)
   <tbody>
@@ -24,11 +25,12 @@
 			<td>{{$user->apellidos}}</td>
 			<td>{{$user->usuario}}</td>
 			<td>{{$user->estado}}</td>
-			
+			<td>
+{!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-primary'])!!}</td>
   </tbody> 
   @endforeach
 </table> 
 
 
-{!!link_to_route('user.create', $title = "Crear Usuario",$attributes = ['class'=>'btn btn-primary'])!!}
+{!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-success'])!!}
 </div>
