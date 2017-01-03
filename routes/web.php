@@ -45,3 +45,6 @@ Route::resource('login','LoginController');
 
 /* Rutas para Panel Usuarios*/
 Route::resource('user','UsuarioController');
+
+/* Rutas para proyectos*/
+Route::resource('proyectos','ProyectosController');

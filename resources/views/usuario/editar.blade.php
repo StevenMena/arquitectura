@@ -33,6 +33,10 @@
 		{!!Form::select('estado',['A' => 'Activo', 'I' => 'Inactivo'], ['class'=>'form-control'])!!}
 		    
 	</div>
+	<div class="form-group">
+		{!!Form::label('Tipo')!!}
+		{!!Form::select('id_tipoUsuario',['1' => 'Administrador', '2' => 'Docente'], ['class'=>'form-control'])!!}
+	</div>
 
 	<div class="form-group">
 	{!!Form::submit('Actualizar', ['class'=>'btn btn-info'])!!}

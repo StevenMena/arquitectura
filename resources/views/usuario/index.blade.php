@@ -19,6 +19,7 @@
 		  <th>Apellidos</th>
 		  <th>Usuario</th>
 		  <th>Estado</th>
+		  <th>Tipo</th>
 		  <th>Opciones</th>
 	</thead>
 	@foreach($usuarios as $user)
@@ -27,6 +28,7 @@
 			<td>{{$user->apellidos}}</td>
 			<td>{{$user->usuario}}</td>
 			<td>{{$user->estado}}</td>
+			<td>{{$user->tipo}}</td>
 			<td> {!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-primary'])!!} 
 			{!!link_to_route('user.destroy', $title = 'Eliminar',$parameters=$user->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
     </tbody>

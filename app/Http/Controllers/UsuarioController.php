@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Usuario;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Redirect;
 use Session;
 
@@ -10,8 +11,12 @@ use Session;
 class UsuarioController extends Controller
 {
     public function index(){
-    $usuarios= Usuario::all();
-	return view('usuario.index',compact('usuarios'));
+    $usuarios= DB::table('usuarios')
+                ->join('tipousuario','usuarios.id_tipoUsuario','=','tipousuario.id')
+                ->select('usuarios.*','tipousuario.tipo')
+                ->get();
+
+	return view('usuario.index',['usuarios' => $usuarios]);
     }
 
     public function create(){
