@@ -47,4 +47,4 @@ Route::resource('login','LoginController');
 Route::resource('user','UsuarioController');
 
 /* Rutas para proyectos*/
-Route::resource('proyectos','ProyectosController');
+Route::resource('proyectos','ProyectoController');
