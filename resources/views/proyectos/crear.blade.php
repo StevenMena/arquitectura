@@ -6,7 +6,7 @@
 {!!Form::open(['route'=>'proyectos.store', 'method'=>'POST', 'files'=>true])!!}
 	<div class="form-group">
 		{!!Form::label('Nombre del Proyecto')!!}
-		{!!Form::text('nombreProyectos', null, ['class'=>'form-control'])!!}
+		{!!Form::text('nombreProyecto', null, ['class'=>'form-control'])!!}
 	</div>
 	<div class="form-group">
 		{!!Form::label('Descripción del Proyecto')!!}
@@ -14,7 +14,12 @@
 	</div>
 	<div class="form-group">
 		{!!Form::label('Tipo de Proyecto')!!}
-		{!!Form::select('tipo',$tipos[0], null,['class'=>'form-control'])!!}
+		{!!Form::select('tipo', $tipos,null,['class'=>'form-control'])!!}
+         		
+		<?php for($i=0;$i<count($tipos);++$i):
+			echo $tipos[$i]->tipo;
+		endfor
+		?>
 	</div>
 	<div class="form-group">
 		{!!Form::label('Origen del Proyecto')!!}
@@ -22,7 +27,7 @@
 	</div>
 	<div class="form-group">
 		{!!Form::label('Archivo')!!}
-		{!!Form::file('Path', null, ['class'=>'form-control'])!!}
+		{!!Form::file('path', null, ['class'=>'form-control'])!!}
 	</div>
 
 	<div class="form-group">

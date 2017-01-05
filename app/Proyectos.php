@@ -8,7 +8,7 @@ class Proyectos extends Model
 {
         
 protected $fillable = [
-        'nombreProyecto','descripcion','tipo','origen','estado','archivo',
+        'nombreProyecto','descripcion','tipo','imagen','origen','estado',
     ];
 
 }

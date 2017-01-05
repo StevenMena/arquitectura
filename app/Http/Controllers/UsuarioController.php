@@ -16,7 +16,7 @@ class UsuarioController extends Controller
                 ->select('usuarios.*','tipousuario.tipo')
                 ->get();
 
-	return view('usuario.index',['usuarios' => $usuarios]);
+	return view('usuario.index', ['usuarios' => $usuarios]);
     }
 
     public function create(){
