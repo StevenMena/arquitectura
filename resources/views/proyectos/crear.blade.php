@@ -15,11 +15,6 @@
 	<div class="form-group">
 		{!!Form::label('Tipo de Proyecto')!!}
 		{!!Form::select('tipo', $tipos,null,['class'=>'form-control'])!!}
-         		
-		<?php for($i=0;$i<count($tipos);++$i):
-			echo $tipos[$i]->tipo;
-		endfor
-		?>
 	</div>
 	<div class="form-group">
 		{!!Form::label('Origen del Proyecto')!!}

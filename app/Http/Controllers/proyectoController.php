@@ -20,18 +20,22 @@ class proyectoController extends Controller
     	   			->select('tipoProyecto as tipo','id')
     	   			->where('estado',1)
     	   			->get();*/
-    $tipos=tiposProyectos::all();
+    $tipos=tiposProyectos::all('tipoProyecto');
 
     return view('proyectos.crear',compact('tipos'));  
     }
 
     public function store(Request $request){
+    $file=$request['path'];
+    $imagen=$file->openFile()->fread($file->getSize());
+    dd($imagen);
+    
     $proyecto=Proyectos::create([
     	'nombreProyecto'=>$request['nombreProyecto'],
     	'descripcion'=>$request['descripcion'],
     	'tipo'=>$request['tipo'],
     	'origen'=>$request['origen'],
-    	'imagen'=>$request['path'],
+    	'imagen'=>file_get_contents($request['path']),
 		]);
 		Session::flash('message','Proyecto creado correctamente');
         return redirect::to('/proyectos/create');
