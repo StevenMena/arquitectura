@@ -26,18 +26,17 @@ class proyectoController extends Controller
     }
 
     public function store(Request $request){
+    
     $file=$request['path'];
     $imagen=$file->openFile()->fread($file->getSize());
-    dd($imagen);
-    
     $proyecto=Proyectos::create([
     	'nombreProyecto'=>$request['nombreProyecto'],
     	'descripcion'=>$request['descripcion'],
     	'tipo'=>$request['tipo'],
     	'origen'=>$request['origen'],
-    	'imagen'=>file_get_contents($request['path']),
+    	'imagen'=>$imagen,
 		]);
 		Session::flash('message','Proyecto creado correctamente');
-        return redirect::to('/proyectos/create');
+        return redirect::to('proyectos.crear');
     }
 }
