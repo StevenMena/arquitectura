@@ -1,8 +1,8 @@
-@extends('admin')
+@extends('admin1')
 
 @section('contenido')
 
-<div class="form-group" style="position:absolute; margin-left:20%; width: 75%; margin-top: 100px;">
+<div class="the-box">
 {!!Form::open(['route'=>'proyectos.store', 'method'=>'POST', 'files'=>true])!!}
 	<div class="form-group">
 		{!!Form::label('Nombre del Proyecto')!!}
@@ -14,7 +14,12 @@
 	</div>
 	<div class="form-group">
 		{!!Form::label('Tipo de Proyecto')!!}
-		{!!Form::select('tipo', $tipos,null,['class'=>'form-control'])!!}
+		<select class="form-control">
+			<option value="0"></option>
+			@foreach($tipos as $tipo)
+				<option value="{{$tipo->id}}">{!!$tipo->tipoProyecto!!}</option>
+			@endforeach
+		</select>
 	</div>
 	<div class="form-group">
 		{!!Form::label('Origen del Proyecto')!!}
@@ -30,3 +35,4 @@
 	</div>
 	{!!Form::close()!!}
 </div>
+@endsection

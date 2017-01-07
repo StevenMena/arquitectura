@@ -11,16 +11,25 @@ use Session;
 class UsuarioController extends Controller
 {
     public function index(){
+    $data = ['title'            => 'Gestion de Usuarios'
+                ,'subtitle'         => ''
+                ,'breadcrumb'       => [
+                    ['nom'  =>  'Gestion de Usuarios', 'url' => '#'],
+                    ['nom'  =>  'Lista de Usuarios', 'url' => '#']
+                ]]; 
+
     $usuarios= DB::table('usuarios')
                 ->join('tipousuario','usuarios.id_tipoUsuario','=','tipousuario.id')
                 ->select('usuarios.*','tipousuario.tipo')
                 ->get();
-
-	return view('usuario.index', ['usuarios' => $usuarios]);
+    $data['usuarios']=$usuarios;
+	return view('usuario.index',$data);
     }
 
     public function create(){
-    	return view('usuario.crear');
+        $data = ['title'            => 'Gestion de Usuarios' 
+                ,'subtitle'         => ''];
+    	return view('usuario.crear',$data);
     }        
 
     public function store(Request $request){
@@ -36,8 +45,12 @@ class UsuarioController extends Controller
     }
 
     public function edit($id){
+    $data = ['title'            => 'Gestion de Usuarios' 
+                ,'subtitle'         => ''];
+
      $user=Usuario::find($id);
-     return view('usuario.editar',['user'=>$user]);
+     $data['user']=$user;
+     return view('usuario.editar',$data);
     }
 
     public function update($id, Request $request){

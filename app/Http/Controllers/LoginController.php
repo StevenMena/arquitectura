@@ -14,8 +14,11 @@ class LoginController extends Controller
     }
 
   public function store(Request $datos){
+  	$data = ['title' 			=> 'BIENVENIDO AL PANEL DE ADMINISTRACION DEL SITIO DE LA ESCUELA DE ARQUITECTURA' 
+				,'subtitle'			=> ''];
+
   	if(Auth::attempt(['usuario'=>$datos['usuariotxt'], 'password'=>$datos['password']])){
-  		return View('admin');
+  		return View('admin1',$data);
   	}
   	Session::flash('message','Datos inv&aacute;lidos');
         return redirect::to('/login');

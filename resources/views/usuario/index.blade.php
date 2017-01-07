@@ -1,4 +1,4 @@
-@extends('admin')
+@extends('admin1')
 
 @section('contenido')
 
@@ -11,7 +11,7 @@
 @endif
 
 
-<div class="form-group" style="position:absolute; margin-left:20%; width: 75%; margin-top: 100px;">
+<div class="form-group">
 
 <table class="table">
 	 <thead>
@@ -29,13 +29,13 @@
 			<td>{{$user->usuario}}</td>
 			<td>{{$user->estado}}</td>
 			<td>{{$user->tipo}}</td>
-			<td> {!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-primary'])!!} 
+			<td> {!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-warning'])!!} 
 			{!!link_to_route('user.destroy', $title = 'Eliminar',$parameters=$user->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
     </tbody>
   @endforeach
 </table> 
 
-{!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-success'])!!}
+{!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
 </div>
 
 @endsection

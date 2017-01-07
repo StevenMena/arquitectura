@@ -20,9 +20,16 @@ class proyectoController extends Controller
     	   			->select('tipoProyecto as tipo','id')
     	   			->where('estado',1)
     	   			->get();*/
-    $tipos=tiposProyectos::all('tipoProyecto');
-
-    return view('proyectos.crear',compact('tipos'));  
+    $data = ['title'            => 'Gestion de Usuarios'
+                ,'subtitle'         => ''
+                ,'breadcrumb'       => [
+                    ['nom'  =>  'Gestion de Usuarios', 'url' => '#'],
+                    ['nom'  =>  'Lista de Usuarios', 'url' => '#']
+                ]]; 
+    $tipos=tiposProyectos::all();
+    $data['tipos']=$tipos;
+    //dd($data);
+    return view('proyectos.crear',$data);  
     }
 
     public function store(Request $request){
