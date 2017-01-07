@@ -12,5 +12,7 @@ protected $table = 'proyectos';
 protected $fillable = [
         'nombreProyecto','descripcion','tipo','imagen','origen','estado',
     ];
+const CREATED_AT = 'fechaCreacion';
+const UPDATED_AT = 'fechaModificacion';
 
 }

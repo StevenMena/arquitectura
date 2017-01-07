@@ -14,7 +14,7 @@
 	</div>
 	<div class="form-group">
 		{!!Form::label('Tipo de Proyecto')!!}
-		<select class="form-control">
+		<select name="tipo" class="form-control">
 			<option value="0"></option>
 			@foreach($tipos as $tipo)
 				<option value="{{$tipo->id}}">{!!$tipo->tipoProyecto!!}</option>
