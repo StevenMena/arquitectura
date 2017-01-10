@@ -16,7 +16,11 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/slide/foto0.jpg" alt="Chania" width="460" height="345">
+        @foreach($noticias as $noticia)
+        <img src="{{$noticia->archivo}}" alt="Chania" width="460" height="345">
+        <p style="text-align: center">{!!$noticia->textoNoticia!!}</p>
+        @endforeach
+
       </div>
 
       <div class="item">

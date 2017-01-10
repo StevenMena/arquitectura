@@ -21,6 +21,13 @@
 				</a>
 		</li>
 
+		<li class="">
+			<a href="{{route('noticias.create')}}">
+				<i class="fa fa-users icon-sidebar"></i>
+				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
+				Gestion de Noticias
+				</a>
+		</li>
         
 	</ul>
 </div><!-- /.sidebar-left -->

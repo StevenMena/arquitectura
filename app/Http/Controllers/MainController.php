@@ -4,12 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\proyectoController;
+use App\Noticias;
+
 class MainController extends Controller
 {
     //
      public function getInicio(){
-
-        return view('inicio');
+        $data = ['title'            => 'Gestion de Usuarios'
+                ,'subtitle'         => ''
+                ,'breadcrumb'       => [
+                    ['nom'  =>  'Gestion de Usuarios', 'url' => '#'],
+                    ['nom'  =>  'Lista de Usuarios', 'url' => '#']
+                ]]; 
+    
+        $noticias= Noticias::all();
+        $data['noticias']=$noticias;
+        return view('inicio',$data);
     }
 
     public function getFases(){
