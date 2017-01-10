@@ -41,7 +41,7 @@
 		 		
 	 			<! -- Blog Post 2 -->
 		 		<a href="single-post.html"><h3 class="ctitle">Fase de Instrumentación.</h3></a>
-		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
+		 		<!--<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>-->
 		 		<p>Corresponden al tercer y cuarto año con materias que les permita el dominio del instrumental de la especialidad.</p>
 		 	<!--	<p><a href="single-post.html">[Read More]</a></p>-->
 		 		<p><img class="img-responsive" src="img/fase2.jpg"></p>
@@ -52,7 +52,7 @@
 		 		
 	 			<! -- Blog Post 3 -->
 		 		<a href="single-post.html"><h3 class="ctitle">Fase Operativa o pre-especialización.</h3></a>
-		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
+		 		<!--<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>-->
 		 		<p>Materias de quinto año que tienen la complejidad y el sentido de pre-especialización en la carrera, así como las técnicas electivas en las cuales el estudiante deberá Mostrar su propia capacidad de manejo de los proyectos.</p>
 		 		<p><img class="img-responsive" src="img/fase3.jpg"></p>
 		 		
@@ -124,9 +124,9 @@
 		            	<a class="btn btn-theme" href="#" role="button">Interface</a>		            	
 		            	<a class="btn btn-theme" href="#" role="button">UI</a>		            	
 		            	<a class="btn btn-theme" href="#" role="button">Blog</a>		            	
-		 			</p>
-	 		</div>
-	 	</div><! --/row -->
-	 <!--</div><!--/container -->
+		 			</p>-->
+	 		</div> <!--/col-lg-4-->
+	 	</div><!-- /row -->
+	</div><!-- /container -->
 
 @endsection

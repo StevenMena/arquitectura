@@ -73,7 +73,7 @@
 <!--                <li><a href="single-project.html">SINGLE PROJECT</a></li>-->
               </ul>
             </li>
-            <li><a href="contacto">CONTACTO</a></li>
+            <li><a href="{{route('contacto')}}">CONTACTO</a></li>
           </ul>
         </div><!--/.nav-collapse -->
 </div>     

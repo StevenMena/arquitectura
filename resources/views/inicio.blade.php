@@ -113,7 +113,7 @@
                             
           <div class="portfolio-item web-design">
             <div class="he-wrap tpl6">
-              <img src="img/AreasAccion/diseñoArq.jpg" alt="">
+              <img src="img/AreasAccion/disenoArq.jpg" alt="">
                 <div class="he-view">
                   <div class="bg a0" data-animate="fadeIn">
                     <h3 class="a1" data-animate="fadeInDown">Diseño y administración de proyectos arquitectónicos y urbanísticos   </h3>
