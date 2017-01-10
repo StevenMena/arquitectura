@@ -23,7 +23,7 @@
 	 	<div class="row">
 	 	
 	 		<! -- BLOG POSTS LIST -->
-	 		<p><img class="img-responsive" src="assets/img/fases.jpg"></p>
+	 		<p><img class="img-responsive" src="img/fases.jpg"></p>
 	 		<div class="col-lg-8">
 	 			<! -- Blog Post 1 -->
 		 		
@@ -32,7 +32,7 @@
 		 		<p>Corresponden a las asignaturas en el primer y segundo año con contenidos básicos teóricos que fundamente la carrera
                 en el manejo de métodos de trabajo y abordaje de problemas.</p>
 
-		 		<p><img class="img-responsive" src="assets/img/fase1.jpg"></p>
+		 		<p><img class="img-responsive" src="img/fase1.jpg"></p>
 		 		
 		 		<!--<p><a href="single-post.html">[Read More]</a></p>-->
 		 		<div class="hline"></div>
@@ -44,7 +44,7 @@
 		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
 		 		<p>Corresponden al tercer y cuarto año con materias que les permita el dominio del instrumental de la especialidad.</p>
 		 	<!--	<p><a href="single-post.html">[Read More]</a></p>-->
-		 		<p><img class="img-responsive" src="assets/img/fase2.jpg"></p>
+		 		<p><img class="img-responsive" src="img/fase2.jpg"></p>
 		 		
 		 		<div class="hline"></div>
 
@@ -54,7 +54,7 @@
 		 		<a href="single-post.html"><h3 class="ctitle">Fase Operativa o pre-especialización.</h3></a>
 		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
 		 		<p>Materias de quinto año que tienen la complejidad y el sentido de pre-especialización en la carrera, así como las técnicas electivas en las cuales el estudiante deberá Mostrar su propia capacidad de manejo de los proyectos.</p>
-		 		<p><img class="img-responsive" src="assets/img/fase3.jpg"></p>
+		 		<p><img class="img-responsive" src="img/fase3.jpg"></p>
 		 		
 		 		<!---<p><a href="single-post.html">[Read More]</a></p>-->
 		 		<div class="hline"></div>

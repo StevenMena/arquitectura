@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-@endsection
+
 
 	<!-- *****************************************************************************************************************
 	 BLUE WRAP
@@ -128,26 +128,41 @@
 	 		<div class="row">
 	 			<div class="col-lg-8 col-lg-offset-2">
 	 			<i class="fa fa-comment-o"></i>
-	 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-	 			<h4><br/>Marcel Newman</h4>
-	 			<p>WEB DESIGNER - BLACKTIE.CO</p>
+	 			<p>El ejercicio de la arquitectura es la más deliciosa de las labores. Es también junto con la agricultura, la más necesaria para el hombre” </p>
+	 			<h4><br/>Philip Johnson</h4>
 	 			</div>
 	 		</div><! --/row -->
 	 	</div><! --/container -->
 	 </div><! --/twrap -->
 	 
-	
+@endsection	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    {!!Html::script('https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')!!}
+
+    {!!Html::script('assets/js/bootstrap.min.js')!!}
+    {!!Html::script('assets/js/retina-1.1.0.js')!!}
+
+
+    {!!Html::script('assets/js/jquery.hoverdir.js')!!}
+    {!!Html::script('assets/js/jquery.hoverex.min.js')!!}
+
+    {!!Html::script('assets/js/jquery.prettyPhoto.js')!!}
+    {!!Html::script('assets/js/jquery.isotope.min.js')!!}
+
+
+    {!!Html::script('assets/js/custom.js')!!}
+    
+ <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/retina-1.1.0.js"></script>
 	<script src="assets/js/jquery.hoverdir.js"></script>
 	<script src="assets/js/jquery.hoverex.min.js"></script>
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
   	<script src="assets/js/jquery.isotope.min.js"></script>
-  	<script src="assets/js/custom.js"></script>
+  	<script src="assets/js/custom.js"></script>-->
   	<script type="text/javascript">
   		//footer
     	$("#footerwrap").load("footer.html");

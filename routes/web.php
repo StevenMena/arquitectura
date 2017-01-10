@@ -39,6 +39,16 @@ Route::get('/fases',[
 	'uses' => 'MainController@getFases'
 ]);
 
+Route::get('/areas',[
+    'as' => 'areas',
+    'uses' => 'MainController@getAreas'
+]);
+
+
+Route::get('/plan',[
+    'as' => 'plan',
+    'uses' => 'MainController@getPlan'
+]);
 Route::get('/gmaps', ['as ' => 'gmaps', 'uses' => 'GmapsController@index']);
 
 Route::get('/admin', function () {

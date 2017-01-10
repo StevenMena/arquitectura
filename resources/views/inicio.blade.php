@@ -78,8 +78,8 @@
         </div>
         <div class="col-md-4">
           <i class="fa fa-trophy"></i>
-          <h4>Valores</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <h4>Objetivo</h4>
+          <p>Contribuir al desarrollo social y económico del país en la formación de profesionales en Arquitectura con alta calidad académica, técnica y científica que se integren al mejoramiento del espacio urbano-arquitectónico en el contexto nacional.</p>
           
         </div>            
       </div>
@@ -90,92 +90,92 @@
    PORTFOLIO SECTION
    ***************************************************************************************************************** -->
    <div id="portfoliowrap">
-        <h3>CAMPOS DE ACCION DE LA ARQUITECTURA</h3>
-
-        <div class="portfolio-centered">
-            <div class="recentitems portfolio">
-        <div class="portfolio-item graphic-design">
-          <div class="he-wrap tpl6">
-          <img src="img/AreasAccion/planificacionUrbana.jpg" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Planificación urbana y territorial</h3>
-                                <a data-rel="prettyPhoto" href="img/AreasAccion/planificacionUrbana.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                          </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
-        </div><!-- end col-12 -->
+    <h3>CAMPOS DE ACCION DE LA ARQUITECTURA</h3>
+      <div class="portfolio-centered">
+          <div class="recentitems portfolio">
+            
+            <div class="portfolio-item graphic-design">
+              <div class="he-wrap tpl6">
+                <img src="img/AreasAccion/planificacionUrbana.jpg" alt="">
+                  <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                      <h3 class="a1" data-animate="fadeInDown">Planificación urbana y territorial</h3>
+                        <a data-rel="prettyPhoto" href="img/AreasAccion/planificacionUrbana.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                    </div><!-- he bg -->
+                  </div><!-- he view -->    
+              </div><!-- he wrap -->
+            </div><!-- end col-12 -->
                             
-                <div class="portfolio-item web-design">
-                    <div class="he-wrap tpl6">
-          <img src="img/AreasAccion/diseñoArq.jpg" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Diseño y administración de proyectos arquitectónicos y urbanísticos   </h3>
-                                <a data-rel="prettyPhoto" href="img/AreasAccion/diseñoArq.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                          </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
-        </div><!-- end col-12 -->
+          <div class="portfolio-item web-design">
+            <div class="he-wrap tpl6">
+              <img src="img/AreasAccion/diseñoArq.jpg" alt="">
+                <div class="he-view">
+                  <div class="bg a0" data-animate="fadeIn">
+                    <h3 class="a1" data-animate="fadeInDown">Diseño y administración de proyectos arquitectónicos y urbanísticos   </h3>
+                      <a data-rel="prettyPhoto" href="img/AreasAccion/diseñoArq.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                      <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                  </div><!-- he bg -->
+                </div><!-- he view -->    
+            </div><!-- he wrap -->
+          </div><!-- end col-12 -->
         
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-          <img src="img/AreasAccion/supervision.jpg" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Administración, gestión, construcción y /o supervisión de proyectos arquitectónicos y urbanísticos </h3>
-                                <a data-rel="prettyPhoto" href="img/AreasAccion/supervision.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                          </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
-        </div><!-- end col-12 -->
+          <div class="portfolio-item graphic-design">
+            <div class="he-wrap tpl6">
+              <img src="img/AreasAccion/supervision.jpg" alt="">
+                <div class="he-view">
+                  <div class="bg a0" data-animate="fadeIn">
+                    <h3 class="a1" data-animate="fadeInDown">Administración, gestión, construcción y /o supervisión de proyectos arquitectónicos y urbanísticos </h3>
+                    <a data-rel="prettyPhoto" href="img/AreasAccion/supervision.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                    <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                  </div><!-- he bg -->
+                </div><!-- he view -->    
+              </div><!-- he wrap -->
+            </div><!-- end col-12 -->
         
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-          <img src="img/AreasAccion/asesoria.jpg" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Asesoría y consultoría de proyectos arquitectónicos y urbanísticos</h3>
-                                <a data-rel="prettyPhoto" href="img/AreasAccion/asesoria.jpg.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                          </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
-        </div><!-- end col-12 -->
+          <div class="portfolio-item graphic-design">
+            <div class="he-wrap tpl6">
+              <img src="img/AreasAccion/asesoria.jpg" alt="">
+                <div class="he-view">
+                  <div class="bg a0" data-animate="fadeIn">
+                    <h3 class="a1" data-animate="fadeInDown">Asesoría y consultoría de proyectos arquitectónicos y urbanísticos</h3>
+                    <a data-rel="prettyPhoto" href="img/AreasAccion/asesoria.jpg.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                    <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                  </div><!-- he bg -->
+                </div><!-- he view -->    
+              </div><!-- he wrap -->
+            </div><!-- end col-12 -->
                                         
-                <div class="portfolio-item books">
-                    <div class="he-wrap tpl6">
-          <img src="img/AreasAccion/docencia.jpg" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Docencia e investigación en arquitectura y urbanismo </h3>
-                                <a data-rel="prettyPhoto" href="img/AreasAccion/docencia.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                          </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
+        <div class="portfolio-item books">
+          <div class="he-wrap tpl6">
+            <img src="img/AreasAccion/docencia.jpg" alt="">
+              <div class="he-view">
+                <div class="bg a0" data-animate="fadeIn">
+                  <h3 class="a1" data-animate="fadeInDown">Docencia e investigación en arquitectura y urbanismo </h3>
+                  <a data-rel="prettyPhoto" href="img/AreasAccion/docencia.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                </div><!-- he bg -->
+              </div><!-- he view -->    
+            </div><!-- he wrap -->
         </div><!-- end col-12 -->
                                         
                
-      <div class="portfolio-item books">
-                <div class="he-wrap tpl6">
+      <div class="portfolio-item books">          
+        <div class="he-wrap tpl6">
           <img src="img/AreasAccion/restauracion.jpg" alt="">
             <div class="he-view">
               <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Evaluación, conservación, remodelación y /o restauración de bienes inmuebles, que tengan valor histórico y /o arquitectónico</h3>
-                                <a data-rel="prettyPhoto" href="img/AreasAccion/restauracion.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                          </div><!-- he bg -->
+                  <h3 class="a1" data-animate="fadeInDown">Evaluación, conservación, remodelación y /o restauración de bienes inmuebles, que tengan valor histórico y /o arquitectónico</h3>
+                  <a data-rel="prettyPhoto" href="img/AreasAccion/restauracion.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                  <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+              </div><!-- he bg -->
             </div><!-- he view -->    
           </div><!-- he wrap -->
         </div><!-- end col-12 -->
                     
-            </div><!-- portfolio -->
-        </div><!-- portfolio container -->
-   </div><!--/Portfoliowrap -->
+      </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+ </div><!--/Portfoliowrap -->
    
    
 

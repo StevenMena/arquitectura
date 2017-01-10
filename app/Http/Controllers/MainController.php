@@ -12,6 +12,16 @@ class MainController extends Controller
     	return view('menu.fases');
     }
 
+    public function getAreas(){
+
+        return view('menu.areas');
+    }
+
+    public function getPlan(){
+
+        return view('menu.plan');
+    }
+
     public function getGraduacion(){
         $data=[];
         $proyecto = new proyectoController();
