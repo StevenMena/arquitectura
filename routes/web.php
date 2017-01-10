@@ -10,10 +10,14 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('inicio');
-});
+});*/
+Route::get('/',[
+    'as' => '/',
+    'uses' => 'MainController@getInicio'
+]);
 
 /*
 Route::get('/inicio', function () {

@@ -53,7 +53,7 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="../public">INICIO</a></li>
+            <li><a href="{{route('/')}}">INICIO</a></li>
             <li><a href="nosotros">NOSOTROS</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROYECCION SOCIAL<b class="caret"></b></a>

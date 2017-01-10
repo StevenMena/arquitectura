@@ -7,6 +7,11 @@ use App\Http\Controllers\proyectoController;
 class MainController extends Controller
 {
     //
+     public function getInicio(){
+
+        return view('inicio');
+    }
+
     public function getFases(){
 
     	return view('menu.fases');
