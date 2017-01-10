@@ -58,7 +58,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROYECCION SOCIAL<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="blog.html">PROYECTOS DE GRADUACION</a></li>
+                <li><a href="{{route('proyectos.graduacion')}}">PROYECTOS DE GRADUACION</a></li>
                 <li><a href="blog.html">PROYECTOS DISPONIBLES</a></li>
                 <li><a href="portfolio.html">PROYECTOS SOCIALES</a></li>
 <!--                <li><a href="single-project.html">SINGLE PROJECT</a></li>-->

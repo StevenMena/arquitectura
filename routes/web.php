@@ -29,16 +29,23 @@ Route::get('/contacto',[
 	'uses' => 'MainController@getContacto'
 ]);
 
+Route::get('/proyectos/graduacion',[
+    'as' => 'proyectos.graduacion',
+	'uses' => 'MainController@getGraduacion'
+]);
+
+Route::get('/fases',[
+	'as' => 'fases',
+	'uses' => 'MainController@getFases'
+]);
+
 Route::get('/gmaps', ['as ' => 'gmaps', 'uses' => 'GmapsController@index']);
 
 Route::get('/admin', function () {
     return view('admin');
 });
 
-Route::get('/fases',[
-	'as' => 'fases',
-	'uses' => 'MainController@getFases'
-]);
+
 /* Rutas para login*/
 Route::resource('login','LoginController');
 

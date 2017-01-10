@@ -3,13 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\proyectoController;
 class MainController extends Controller
 {
     //
     public function getFases(){
 
-    	return view('navs.fases');
+    	return view('menu.fases');
+    }
+
+    public function getGraduacion(){
+        $data=[];
+        $proyecto = new proyectoController();
+        $image=$proyecto->getImage();
+        //dd($image);
+        $data['image']=$image;
+        //dd($data);
+        return view('menu.blog',$data);
     }
 
    	public function getContacto(){

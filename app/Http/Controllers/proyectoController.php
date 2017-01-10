@@ -7,8 +7,10 @@ use App\tiposProyectos;
 use App\Proyectos;
 use Session;
 use Redirect;
+use Image;
+use Response;
 use Illuminate\Support\Facades\DB;
-
+use finfo;
 class proyectoController extends Controller
 {
     public function index(){
@@ -49,5 +51,22 @@ class proyectoController extends Controller
 	
     Session::flash('message','Proyecto creado correctamente');
     return redirect::to('proyectos.crear');
+    }
+
+    public function getImage(){
+
+        //$file_info = new finfo(FILEINFO_MIME_TYPE);
+        $proyecto = Proyectos::find(1);
+         return response()->make($proyecto->imagen, 200, array(
+        'Content-Type' => (new finfo(FILEINFO_MIME))->buffer($proyecto->imagen)
+        ));
+        
+        /*$pic = Image::make($proyecto->imagen);
+        $response = Response::make($pic->encode('png'));
+
+        //setting content-type
+        $response->header('Content-Type', 'image/png');
+
+        return $response;*/
     }
 }

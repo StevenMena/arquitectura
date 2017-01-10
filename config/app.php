@@ -170,7 +170,7 @@ return [
         //
 
         GeneaLabs\Phpgmaps\PhpgmapsServiceProvider::class,
-
+        Intervention\Image\ImageServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -230,6 +230,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Gmaps' => GeneaLabs\Phpgmaps\Facades\PhpgmapsFacade::class,
+        'Image'     => Intervention\Image\Facades\Image::class,
     ],
 
 ];
