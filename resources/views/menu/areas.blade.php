@@ -91,3 +91,5 @@
 		 		<div class="spacing"></div>
 		</div>
 		</div>
+	</div>
+@endsection

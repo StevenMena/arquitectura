@@ -10,8 +10,15 @@
 	    </div> <!-- /container -->
 	</div><!-- /blue -->
 
+<div class="container"> <!-- /container para el pensum -->
+	<div class="col-md-6 col-md-offset-3">
+		{!!Html::image('img/pensum.jpg')!!} <!-- cambiar imagen por una de mejor calidad -->
+	</div>
+</div>
+
  <div class="container mtb">
 	<div class="row">
+		
 		<h3 class="ctitle">Duraci&oacute;n de la Carrera</h3>
 		<p> Para estudiantes a tiempo completo la carrera tiene una duración de 5 años, equivalentes a 10 ciclos o semestres. En este período puede cursar las materias que componen su proceso de formación. 
 		Una vez egresado el alumno/a, debe realizar el Trabajo de Graduación, el cual dura de 6 meses a 1 año. </p>
@@ -33,4 +40,5 @@
 
 
 	</div>
-</div>		 		
+</div>
+@endsection		 		

@@ -22,7 +22,7 @@
 	 <div class="container mtb">
 	 	<div class="row">
 	 		<div class="col-lg-6">
-	 			<img class="img-responsive" src="assets/img/agency.jpg" alt="">
+	 			<img class="img-responsive" src="/img/agency.jpg" alt="">
 	 		</div>
 	 		
 	 		<div class="col-lg-6">
@@ -36,7 +36,7 @@
 		 		<li> Que los profesionales adquieran la capacidad de trabajo individual y en equipo, con una formación para un ejercicio
 				Profesional ético y actualizado
 				</p>
-		 		<p><br/><a href="contact.html" class="btn btn-theme">Contáctenos</a></p>
+		 		<p><br/><a href="{{route('contacto')}}" class="btn btn-theme">Contáctenos</a></p>
 	 		</div>
 	 	</div><! --/row -->
 	 </div><! --/container -->
