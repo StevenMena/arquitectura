@@ -9,7 +9,7 @@ class Noticias extends Model
     protected $table= 'noticias';
     protected $primaryKey = 'id';
 	protected $fillable = [
-        'nombreNoticia','textoNoticia','archivo',
+        'nombreNoticia','textoNoticia','archivo','estado',
     ];
     public $timestamps=false;
 

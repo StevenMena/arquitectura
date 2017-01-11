@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\proyectoController;
 use App\Noticias;
+use DB;
 
 class MainController extends Controller
 {
@@ -17,9 +18,12 @@ class MainController extends Controller
                     ['nom'  =>  'Lista de Usuarios', 'url' => '#']
                 ]]; 
     
-        $noticias= Noticias::all();
+        $noticias= DB::table('noticias')
+                    ->where('estado','1')
+                    ->get();
+
         $data['noticias']=$noticias;
-        
+
         return view('inicio',$data);
     }
 

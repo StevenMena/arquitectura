@@ -27,12 +27,17 @@
 	</div>
     <div class="form-group">
 		{!!Form::label('Estado')!!}
-		{!!Form::select('estado',['A' => 'Activo', 'I' => 'Inactivo'], ['class'=>'form-control'])!!}
-		    
+		<select name="estado" class="form-control">
+			<option value="0">Inactivo</option>
+	  		<option value="1">Activo</option>
+	    </select>
 	</div>
 	<div class="form-group">
 		{!!Form::label('Tipo')!!}
-		{!!Form::select('id_tipoUsuario',['1' => 'Administrador', '2' => 'Docente'], ['class'=>'form-control'])!!}
+		<select name="id_tipoUsuario" class="form-control">
+			<option value="1">Admnistrador</option>
+	  		<option value="2">Docente</option>
+	    </select>
 	</div>
 
 	<div class="form-group">
