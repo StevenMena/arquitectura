@@ -14,7 +14,7 @@
     {!!Html::style('css/bootstrap.css')!!}
     {!!Html::style('css/style.css')!!}
     {!!Html::style('css/font-awesome.min.css')!!}
-    
+    @yield('css')
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -121,6 +121,7 @@
     {!!Html::script('js/jquery.isotope.min.js')!!}
     {!!Html::script('js/custom.js')!!}
     
+    @yield('js')
 
 <script>
 /*footer
