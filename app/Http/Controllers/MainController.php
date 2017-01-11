@@ -19,6 +19,7 @@ class MainController extends Controller
     
         $noticias= Noticias::all();
         $data['noticias']=$noticias;
+        
         return view('inicio',$data);
     }
 

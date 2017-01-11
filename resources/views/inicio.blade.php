@@ -15,15 +15,18 @@
     </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        @foreach($noticias as $noticia)
-        <img src="{{$noticia->archivo}}" alt="Chania" width="460" height="345">
-        <p style="text-align: center">{!!$noticia->textoNoticia!!}</p>
-        @endforeach
-
+     <div class="item active">
+        <img src="img/slide/foto1.jpg" alt="Chania" width="460" height="345">
       </div>
-
-      <div class="item">
+      @foreach($noticias as $noticia)
+        <div class="item">
+        <img src="data:image/jpg;base64,{{base64_encode($noticia->archivo)}}" width="460" height="345">
+        <p style="text-align: center">{!!$noticia->textoNoticia!!}</p>  
+      </div>
+      @endforeach
+      
+      
+<!--      <div class="item">
         <img src="img/slide/foto1.jpg" alt="Chania" width="460" height="345">
       </div>
     
@@ -35,7 +38,7 @@
         <img src="img/slide/foto3.jpg" alt="Flower" width="460" height="345">
       </div>
     </div>
-
+-->
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
