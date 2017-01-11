@@ -68,13 +68,14 @@
 		 		<h4>Dirección</h4>
 		 		<div class="hline"></div>
 		 			<p>
-		 				Some Ave, 987,<br/>
-		 				23890, New York,<br/>
-		 				United States.<br/>
+		 				Facultad de Ingeniería y Arquitectura - UES<br/>
+		 				Autopista Norte<br/>
+		 				Final 25 Avenida Norte,<br/>
+		 				San Salvador<br/>
 		 			</p>
 		 			<p>
-		 				Email: hello@solidtheme.com<br/>
-		 				Tel: +34 8493-4893
+		 				Email: arquitectura@ues.edu.sv.com<br/>
+		 				Tel: 2511 2000
 		 			</p>
 		 			<h4>Hacia la Libertad por la Cultura</h4>
 	 		</div>

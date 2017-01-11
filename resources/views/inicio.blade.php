@@ -193,7 +193,7 @@
    <div id="cwrap">
      <div class="container">
       <div class="row centered">
-        <h3>NUESTROS PROYECTOS</h3>
+        <h3>EMPRESAS ALIADAS</h3>
         <div class="col-lg-3 col-md-3 col-sm-3">
         <br>
         <br>
