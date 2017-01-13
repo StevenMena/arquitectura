@@ -11,9 +11,27 @@ use Image;
 use Response;
 use Illuminate\Support\Facades\DB;
 use finfo;
+
+
 class proyectoController extends Controller
 {
     public function index(){
+         $data = ['title'            => 'Gestion de Proyectos'
+                ,'subtitle'         => ''
+                ,'breadcrumb'       => [
+                    ['nom'  =>  'Gestion de Proyectos', 'url' => '#'],
+                    ['nom'  =>  'Lista de Proyectos', 'url' => '#']
+                ]]; 
+
+       
+        $proyectos=DB::table('proyectos as pry')
+            ->join('tiposproyectos as tipo','pry.tipo','=','tipo.id')
+            ->join('usuarios as usu','pry.idUsuarioCrea','=','usu.id')
+            ->select('pry.idProyecto','pry.nombreProyecto','tipo.tipoProyecto',DB::raw('concat(usu.nombre," ",usu.apellidos) as nombres'),'pry.fechaCreacion')
+            ->get();
+        $data['proyectos']=$proyectos;
+        //dd($data);
+        return view('proyectos.index',$data);
 
     }
 
@@ -34,9 +52,11 @@ class proyectoController extends Controller
     return view('proyectos.crear',$data);  
     }
 
+
+
     public function store(Request $request){
     
-    //dd($request->all());
+    dd($request->all());
     $file=$request['path'];
     $imagen=$file->openFile()->fread($file->getSize());
     
@@ -50,7 +70,7 @@ class proyectoController extends Controller
     $proyecto->save();
 	
     Session::flash('message','Proyecto creado correctamente');
-    return redirect::to('proyectos.crear');
+    return view('proyectos.crear');
     }
 
     public function getImage(){

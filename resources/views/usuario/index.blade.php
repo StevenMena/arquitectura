@@ -11,7 +11,7 @@
 @endif
 
 
-<div class="form-group">
+<div class="the-box">
 
 <table class="table">
 	 <thead>

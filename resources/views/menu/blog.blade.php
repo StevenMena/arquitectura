@@ -1,11 +1,8 @@
 @extends('master')
+
 @section('content')
 	
-<!-- Fixed navbar -->
-    <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-      
-       
-    </div>
+
 
 	<!-- *****************************************************************************************************************
 	 BLUE WRAP
@@ -29,37 +26,19 @@
 	 		<! -- BLOG POSTS LIST -->
 	 		<div class="col-lg-8">
 	 			<! -- Blog Post 1 -->
-
-		 		<p><img class="img-responsive" src="{{$image}}"></p>
-		 		<a href="single-post.html"><h3 class="ctitle">PROYECTOS DISPONIBLES</h3></a>
-		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
-		 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		 		<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-		 		<p><a href="single-post.html">[Read More]</a></p>
-		 		<div class="hline"></div>
-		 		
-		 		<div class="spacing"></div>
-		 		
-	 			<! -- Blog Post 2 -->
-		 		<p><img class="img-responsive" src="assets/img/post02.jpg"></p>
-		 		<a href="single-post.html"><h3 class="ctitle">Our new project is here.</h3></a>
-		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
-		 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		 		<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-		 		<p><a href="single-post.html">[Read More]</a></p>
-		 		<div class="hline"></div>
-
-		 		<div class="spacing"></div>
-		 		
-	 			<! -- Blog Post 3 -->
-		 		<p><img class="img-responsive" src="assets/img/post03.jpg"></p>
-		 		<a href="single-post.html"><h3 class="ctitle">Logo design contest starts now.</h3></a>
-		 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
-		 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		 		<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-		 		<p><a href="single-post.html">[Read More]</a></p>
-		 		<div class="hline"></div>
-		 		
+	 			@if($proyecto!=null)
+	 			@foreach($proyecto as $pry)
+	 			
+			 		<p><img class="img-responsive" src="data:image/jpg;base64,{{base64_encode($pry->imagen)}}"></p>
+			 		<a href="single-post.html"><h3 class="ctitle">{!!$pry->nombreProyecto!!}</h3></a>
+			 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
+			 		<p>{!!$pry->descripcion!!}</p>
+			 		<p><a href="single-post.html">[Read More]</a></p>
+			 		<div class="hline"></div>
+			 		
+			 		<div class="spacing"></div>
+		 		@endforeach
+		 		@endif
 			</div><!--/col-lg-8 -->
 	 		
 	 		
@@ -126,9 +105,10 @@
 		            	<a class="btn btn-theme" href="#" role="button">UI</a>		            	
 		            	<a class="btn btn-theme" href="#" role="button">Blog</a>		            	
 		 			</p>
+	 		</div> -->
 	 		</div>
-	 	</div><! --/row -->
-	 <!--</div><!--/container -->
+	 	</div>
+	</div>
 
 
 

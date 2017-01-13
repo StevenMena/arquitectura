@@ -21,7 +21,8 @@
 	</div>
 	<div class="form-group">
 		{!!Form::label('Descripción del Proyecto')!!}
-		{!!Form::text('descripcion', null, ['class'=>'form-control summernote-sm'])!!}
+		<textarea name="descripcion" id="descripcion" class="summernote-sm">
+		</textarea>    
 
 	</div>
 	<div class="form-group">
