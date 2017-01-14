@@ -62,7 +62,7 @@ Route::get('/plan',[
     'as' => 'plan',
     'uses' => 'MainController@getPlan'
 ]);
-Route::get('/gmaps', ['as ' => 'gmaps', 'uses' => 'GmapsController@index']);
+
 
 Route::get('/admin', function () {
     return view('admin');

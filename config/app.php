@@ -169,7 +169,7 @@ return [
 
         //
         Yajra\Datatables\DatatablesServiceProvider::class,
-        GeneaLabs\Phpgmaps\PhpgmapsServiceProvider::class,
+        //GeneaLabs\Phpgmaps\PhpgmapsServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         /*
          * Application Service Providers...
@@ -229,7 +229,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'Gmaps' => GeneaLabs\Phpgmaps\Facades\PhpgmapsFacade::class,
+       // 'Gmaps' => GeneaLabs\Phpgmaps\Facades\PhpgmapsFacade::class,
         'Image'     => Intervention\Image\Facades\Image::class,
     ],
 
