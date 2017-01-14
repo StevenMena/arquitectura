@@ -39,7 +39,7 @@ class proyectoController extends Controller
         return Datatables::of($proyectos)
             ->addColumn('eliminar',function ($dt){
                 //'.route('bitacora.detalle',['idBitacora' => Crypt::encrypt($dt->idBitacora)]).'
-                return '<a href="'.route('proyectos.edit',['idProyecto'=>$proyecto->id]).'" class="btn btn-xs btn btn-warning btn-perspective"> Editar</a>'.' '.'<a href="" class="btn btn-xs btn btn-danger btn-perspective"> Eliminar</a>';
+                return '<a href="'.route('proyectos.edit', ['idProyecto'=>$proyecto->id]).'" class="btn btn-xs btn btn-warning btn-perspective"> Editar</a>'.' '.'<a href="" class="btn btn-xs btn btn-danger btn-perspective"> Eliminar</a>';
             })
             ->make(true);
 
