@@ -98,7 +98,7 @@
         </div>
         <div align="center" class="col-lg-4">
           <p>
-            <a href="login" target="_blank">Administración</a>
+            <a href="{{route('login.index')}}" target="_blank">Administración</a>
           </p>
         </div>
       

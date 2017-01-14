@@ -12,6 +12,11 @@
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 {{Session::get('message')}}
 </div>
+@elseif(Session::has('error'))
+<div class="alert alert-warning alert-dismissible" role="alert" style="width: 100%; margin-top: 100px; ">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+{{Session::get('error')}}
+</div>
 @endif
 
 

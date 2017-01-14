@@ -10,7 +10,13 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 class LoginController extends Controller
 {
     public function index(){
- 	   return view('login');	
+      //Verificamos si ya esta logueado de lo contrario se redirige al login
+      if(Auth::check()){
+        //return view('inicio.index',$data); 
+      }else{
+        return view('login');   
+      }
+ 	    //return view('login');	
     }
 
   public function store(Request $datos){

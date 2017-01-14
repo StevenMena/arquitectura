@@ -9,7 +9,14 @@ Route::group(['prefix' => 'proyectos' , 'middleware' => ['auth']], function(){
 			'uses' => 'ProyectoController@getDataRowsProyectos'
 	 	]);	
 
-	
+	Route::post('/actualizarpry',[
+			'as' => 'proyecto.actualizar',
+			'uses' => 'ProyectoController@actualizar'
+	 	]);	
 
-	
+	Route::get('/eliminarpry/{idProyecto}',[
+			'as' => 'proyecto.destroy',
+			'uses' => 'ProyectoController@eliminar'
+	 	]);	
+
 });
