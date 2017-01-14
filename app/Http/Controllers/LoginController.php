@@ -12,7 +12,10 @@ class LoginController extends Controller
     public function index(){
       //Verificamos si ya esta logueado de lo contrario se redirige al login
       if(Auth::check()){
-        //return view('inicio.index',$data); 
+        $data = ['title'      => 'BIENVENIDO AL PANEL DE ADMINISTRACION DEL SITIO DE LA ESCUELA DE ARQUITECTURA' 
+        ,'subtitle'     => ''];
+
+         return view('admin1',$data);
       }else{
         return view('login');   
       }
@@ -25,7 +28,7 @@ class LoginController extends Controller
 
   	if(Auth::attempt(['usuario'=>$datos['usuariotxt'], 'password'=>$datos['password']])){
   		//dd(Auth::user()->nombre);
-      return View('admin1',$data);
+      return view('admin1',$data);
   	}
     else{
   	    Session::flash('message','Datos inv&aacute;lidos');
@@ -33,16 +36,7 @@ class LoginController extends Controller
     }
   }
 
-  public function getLogin(){
-    $data = ['title'      => ''
-        ,'subtitle'     => ''];
-      //Verificamos si ya esta logueado de lo contrario se redirige al login
-      if(Auth::check()){
-        return view('inicio.index',$data); 
-      }else{
-        return view('users.login');   
-      }
-  }  
+    
 
     public function getLogout()
    {

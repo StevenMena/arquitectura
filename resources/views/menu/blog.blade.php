@@ -26,7 +26,7 @@
 	 		<! -- BLOG POSTS LIST -->
 	 		<div class="col-lg-8">
 	 			<! -- Blog Post 1 -->
-	 			@if($proyecto!=null)
+	 			@if(count($proyecto)>=1)
 		 			@foreach($proyecto as $pry)
 		 			
 				 		<p><img class="img-responsive" src="data:{{$pry->mimeType}};base64,{{base64_encode($pry->imagen)}}"></p>

@@ -70,7 +70,7 @@ class MainController extends Controller
         $data['sumapry']=$sumapry;
         $data['lastproyectos']=Proyectos::orderBy('fechaCreacion','desc')->limit(5)->select('idProyecto','nombreProyecto','imagen','mimeType','fechaCreacion')->get();
         //$data
-        //dd($sumapry);
+        //dd($data);
         return view('menu.proyectoHoras',$data);
     }
 
