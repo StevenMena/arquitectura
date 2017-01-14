@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\proyectoController;
+use App\Proyectos;
 use App\Noticias;
 use DB;
 
@@ -44,11 +44,9 @@ class MainController extends Controller
 
     public function getGraduacion(){
         $data=[];
-        $proyecto = new proyectoController();
-        $image=$proyecto->getImage();
-        //dd($image);
-        $data['image']=$image;
-        //dd($data);
+        $proyecto = Proyectos::all();
+        $data['proyecto']=$proyecto;
+        //dd($proyecto);
         return view('menu.blog',$data);
     }
 

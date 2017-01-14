@@ -14,7 +14,7 @@
 		</li>
 
 		<li class="">
-			<a href="{{route('proyectos.create')}}">
+			<a href="{{route('proyectos.index')}}">
 				<i class="fa fa-users icon-sidebar"></i>
 				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
 				Gestion de Proyectos
