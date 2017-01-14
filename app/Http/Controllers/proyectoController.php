@@ -23,9 +23,7 @@ class proyectoController extends Controller
                     ['nom'  =>  'Lista de Proyectos', 'url' => '#']
                 ]]; 
 
-       
-        
-        //dd($data);
+    
         return view('proyectos.index',$data);
 
     }
@@ -41,7 +39,11 @@ class proyectoController extends Controller
         return Datatables::of($proyectos)
             ->addColumn('eliminar',function ($dt){
                 //'.route('bitacora.detalle',['idBitacora' => Crypt::encrypt($dt->idBitacora)]).'
+<<<<<<< HEAD
                 return '<a href="'.route('proyectos.edit',['idProyecto' => $dt->idProyecto]).'" class="btn btn-xs btn btn-warning btn-perspective"> Editar</a>'.' '.'<a href="" class="btn btn-xs btn btn-danger btn-perspective"> Eliminar</a>';
+=======
+                return '<a href="'.route('proyectos.edit', ['idProyecto'=>$proyecto->id]).'" class="btn btn-xs btn btn-warning btn-perspective"> Editar</a>'.' '.'<a href="" class="btn btn-xs btn btn-danger btn-perspective"> Eliminar</a>';
+>>>>>>> origin/master
             })
             ->make(true);
 
@@ -103,5 +105,13 @@ class proyectoController extends Controller
         $response->header('Content-Type', 'image/png');
 
         return $response;*/
+    }
+
+    public function edit(){
+        return view('proyectos.editar');
+    }
+
+    public function show(){
+        return view('proyectos.editar');
     }
 }
