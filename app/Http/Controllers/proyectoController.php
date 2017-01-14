@@ -11,7 +11,7 @@ use Image;
 use Response;
 use Illuminate\Support\Facades\DB;
 use finfo;
-
+use Yajra\Datatables\Facades\Datatables;
 
 class proyectoController extends Controller
 {
@@ -24,17 +24,28 @@ class proyectoController extends Controller
                 ]]; 
 
        
-        $proyectos=DB::table('proyectos as pry')
-            ->join('tiposproyectos as tipo','pry.tipo','=','tipo.id')
-            ->join('usuarios as usu','pry.idUsuarioCrea','=','usu.id')
-            ->select('pry.idProyecto','pry.nombreProyecto','tipo.tipoProyecto',DB::raw('concat(usu.nombre," ",usu.apellidos) as nombres'),'pry.fechaCreacion')
-            ->get();
-        $data['proyectos']=$proyectos;
+        
         //dd($data);
         return view('proyectos.index',$data);
 
     }
 
+    public function getDataRowsProyectos(){
+
+        $proyectos=DB::table('proyectos as pry')
+            ->join('tiposproyectos as tipo','pry.tipo','=','tipo.id')
+            ->join('usuarios as usu','pry.idUsuarioCrea','=','usu.id')
+            ->select('pry.idProyecto','pry.nombreProyecto','tipo.tipoProyecto',DB::raw('concat(usu.nombre," ",usu.apellidos) as nombres'),'pry.fechaCreacion');
+        
+
+        return Datatables::of($proyectos)
+            ->addColumn('eliminar',function ($dt){
+                //'.route('bitacora.detalle',['idBitacora' => Crypt::encrypt($dt->idBitacora)]).'
+                return '<a href="" class="btn btn-xs btn btn-warning btn-perspective"> Editar</a>'.' '.'<a href="" class="btn btn-xs btn btn-danger btn-perspective"> Eliminar</a>';
+            })
+            ->make(true);
+
+    }
     public function create(){
     /* $tipos =DB::table('tiposProyectos')
     	   			->select('tipoProyecto as tipo','id')
@@ -56,7 +67,7 @@ class proyectoController extends Controller
 
     public function store(Request $request){
     
-    dd($request->all());
+    //dd($request->all());
     $file=$request['path'];
     $imagen=$file->openFile()->fread($file->getSize());
     
@@ -66,11 +77,12 @@ class proyectoController extends Controller
     $proyecto->tipo=$request->tipo;
     $proyecto->origen=$request->origen;
     $proyecto->imagen=$imagen;
+    $proyecto->mimeType=$file->getMimeType();
     $proyecto->idUsuarioCrea=1;
     $proyecto->save();
 	
-    Session::flash('message','Proyecto creado correctamente');
-    return view('proyectos.crear');
+    Session::flash('message','Se ha creado proyecto creado correctamente, puede visualizar en el menu de Proyeccion Social del sitio web.');
+    return redirect()->route('proyectos.index');
     }
 
     public function getImage(){

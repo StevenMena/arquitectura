@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -168,7 +168,7 @@ return [
          */
 
         //
-
+        Yajra\Datatables\DatatablesServiceProvider::class,
         GeneaLabs\Phpgmaps\PhpgmapsServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         /*

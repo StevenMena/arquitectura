@@ -10,8 +10,17 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+foreach (new DirectoryIterator(__DIR__.'/Routes') as $file)
+{
+    if (!$file->isDot() && !$file->isDir() && $file->getFilename() != '.gitignore')
+    {
+        require_once __DIR__.'/Routes/'.$file->getFilename();
+        //require_once __DIR__.'/Routes/'.$file->getFilename();
+    }
+}
+
 Route::get('/',[
-    'as' => '/',
+    'as' => 'index',
     'uses' => 'MainController@getInicio'
 ]);
 
@@ -53,10 +62,9 @@ Route::get('/admin', function () {
 
 /* Rutas para login*/
 Route::resource('login','LoginController');
+Route::get('/logout', ['as' => 'logout', 'uses' => 'LoginController@getLogout']); 
 
 
-/* Rutas para Panel Usuarios*/
-Route::resource('user','UsuarioController');
 
 /* Rutas para proyectos*/
 Route::resource('proyectos','ProyectoController');

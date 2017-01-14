@@ -18,10 +18,31 @@ class LoginController extends Controller
 				,'subtitle'			=> ''];
 
   	if(Auth::attempt(['usuario'=>$datos['usuariotxt'], 'password'=>$datos['password']])){
-  		return View('admin1',$data);
+  		//dd(Auth::user()->nombre);
+      return View('admin1',$data);
   	}
-  	Session::flash('message','Datos inv&aacute;lidos');
+    else{
+  	    Session::flash('message','Datos inv&aacute;lidos');
         return redirect::to('/login');
-
+    }
   }
+
+  public function getLogin(){
+    $data = ['title'      => ''
+        ,'subtitle'     => ''];
+      //Verificamos si ya esta logueado de lo contrario se redirige al login
+      if(Auth::check()){
+        return view('inicio.index',$data); 
+      }else{
+        return view('users.login');   
+      }
+  }  
+
+    public function getLogout()
+   {
+      //Deslogueamos al usuario
+      Auth::logout();
+      //Redireccion a ruta inicial
+      return redirect()->route('index');
+   }
 }

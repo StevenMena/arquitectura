@@ -1,5 +1,9 @@
 @extends('admin1')
 
+@section('css')
+{!! Html::style('plugins/datatable/css/bootstrap.datatable.min.css') !!} 
+@endsection
+
 @section('contenido')
 
 
@@ -12,30 +16,62 @@
 
 
 <div class="the-box">
-
-<table class="table">
-	 <thead>
-		  <th>Corelativo</th>
-		  <th>Nombre</th>
-		  <th>Tipo</th>
-		  <th>Usuario Creacion</th>
-		  <th>Fecha Creacion</th>
-		  <th>Opciones</th>
-	</thead>
-	@foreach($proyectos as $proyecto)
-  <tbody>
-	    	<td>{{$proyecto->idProyecto}}</td>
-			<td>{{$proyecto->nombreProyecto}}</td>
-			<td>{{$proyecto->tipoProyecto}}</td>
-			<td>{{$proyecto->nombres}}</td>
-			<td>{{$proyecto->fechaCreacion}}</td>
-			<td> {!!link_to_route('user.edit', $title = 'Editar',null, $attributes = ['class'=>'btn btn-warning'])!!} 
-			{!!link_to_route('user.destroy', $title = 'Eliminar',null, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
-    </tbody>
-  @endforeach
-</table> 
-
 {!!link_to_route('proyectos.create', $title = 'Crear Proyecto', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+
+<br>
+<br>
+<div class="table-responsive">
+    <table class="table table-striped table-hover" id="tr-pry" style="font-size:13px;" width="100%">
+        <thead class="the-box dark full">
+            <tr>
+                <th>Corelativo</th>
+		  		<th>Nombre</th>
+		  		<th>Tipo</th>
+		  		<th>Usuario Creacion</th>
+		  		<th>Fecha Creacion</th>
+		  		<th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div><!-- /.table-responsive -->
+
+
 </div>
 
+@endsection
+
+@section('js')
+{!! Html::script('plugins/datatable/js/jquery.dataTables.min.js') !!}
+{!! Html::script('plugins/datatable/js/bootstrap.datatable.js') !!}
+<script>
+    
+$( document ).ready(function(){
+   var table = $('#tr-pry').DataTable({
+        filter: true,
+        serverSide: true,
+        
+        ajax: '{!! route('dt.row.data.proyectos') !!}',
+        columns: [  
+            
+            
+            {data: 'idProyecto', name: 'pry.idProyecto'},
+            {data: 'nombreProyecto', name: 'pry.nombreProyecto'},
+            {data: 'tipoProyecto', name: 'tipo.tipoProyecto'},
+            {data: 'nombres', name: 'nombres'},
+            {data: 'fechaCreacion', name: 'pry.fechaCreacion'},
+            {data: 'eliminar', name: 'eliminar',orderable: false, searchable: false}
+            
+                      
+        ],
+    
+        
+        language: {
+            "url": "{{ asset('plugins/datatable/lang/es.json') }}"
+        },
+        order: [[1, 'desc']]
+       
+    });
+});
+</script>
 @endsection

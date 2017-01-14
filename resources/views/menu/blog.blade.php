@@ -27,17 +27,20 @@
 	 		<div class="col-lg-8">
 	 			<! -- Blog Post 1 -->
 	 			@if($proyecto!=null)
-	 			@foreach($proyecto as $pry)
-	 			
-			 		<p><img class="img-responsive" src="data:image/jpg;base64,{{base64_encode($pry->imagen)}}"></p>
-			 		<a href="single-post.html"><h3 class="ctitle">{!!$pry->nombreProyecto!!}</h3></a>
-			 		<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>
-			 		<p>{!!$pry->descripcion!!}</p>
-			 		<p><a href="single-post.html">[Read More]</a></p>
-			 		<div class="hline"></div>
-			 		
-			 		<div class="spacing"></div>
-		 		@endforeach
+		 			@foreach($proyecto as $pry)
+		 			
+				 		<p><img class="img-responsive" src="data:{{$pry->mimeType}};base64,{{base64_encode($pry->imagen)}}"></p>
+				 		<a href="single-post.html"><h3 class="ctitle">{!!$pry->nombreProyecto!!}</h3></a>
+				 		<p><csmall>Posted: {{date_format(date_create($pry->fechaCreacion),'F j, Y')}}.</csmall> | <csmall2>By: Admin</csmall2></p>
+				 		<p>{!!$pry->descripcion!!}</p>
+				 		<p><a href="single-post.html">[Read More]</a></p>
+				 		<div class="fb-share-button" data-href="http://YourPageLink.com" data-layout="button_count"></div>
+				 		<div class="hline"></div>
+				 		
+				 		<div class="spacing"></div>
+			 		@endforeach
+			 	@else
+			 		<div class="alert alert-warning" role="alert">No hay Proyectos de graduaci&oacute;n disponibles para mostrar.</div>
 		 		@endif
 			</div><!--/col-lg-8 -->
 	 		

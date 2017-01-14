@@ -22,10 +22,10 @@
 				<ul class="nav-user navbar-right">
 					<li class="dropdown">
 					  <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
-						Hola, <strong>aaaaaaaaaa</strong>
+						Hola, <strong>{{Auth::user()->nombre.' '.Auth::user()->apellidos}}</strong>
 					  </a>
 					  <ul class="dropdown-menu square primary margin-list-rounded with-triangle">
-						<li><a href="">Cerrar Sesión</a></li>
+						<li><a href="{{route('logout')}}">Cerrar Sesión</a></li>
 					  </ul>
 					</li>
 				</ul>

@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>ASEA</title>
+    <title>Arquitectura-FIA-UES</title>
 
     <!-- Bootstrap core CSS -->
     {!!Html::style('css/bootstrap.css')!!}
@@ -53,7 +53,7 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="{{route('/')}}">INICIO</a></li>
+            <li><a href="{{route('index')}}">INICIO</a></li>
             <li><a href="nosotros">NOSOTROS</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROYECCION SOCIAL<b class="caret"></b></a>
@@ -210,6 +210,14 @@
     setPortfolio();          
   });
 })(jQuery);
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=241110544128";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 </script>
   </body>
 </html>
