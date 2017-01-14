@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>Arquitectura-FIA-UES</title>
+    <title>ASEA</title>
 
     <!-- Bootstrap core CSS -->
     {!!Html::style('css/bootstrap.css')!!}
@@ -59,8 +59,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROYECCION SOCIAL<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="{{route('proyectos.graduacion')}}">PROYECTOS DE GRADUACION</a></li>
-                <li><a href="blog.html">PROYECTOS DISPONIBLES</a></li>
-                <li><a href="portfolio.html">PROYECTOS SOCIALES</a></li>
+                <li><a href="{{route('proyectos.disponibles')}}">PROYECTOS DISPONIBLES</a></li>
+                <li><a href="{{route('proyectos.horas')}}">PROYECTOS SOCIALES</a></li>
 <!--                <li><a href="single-project.html">SINGLE PROJECT</a></li>-->
               </ul>
             </li>
@@ -210,14 +210,6 @@
     setPortfolio();          
   });
 })(jQuery);
-
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=241110544128";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
 </script>
   </body>
 </html>

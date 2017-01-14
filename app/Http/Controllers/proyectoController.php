@@ -46,6 +46,8 @@ class proyectoController extends Controller
             ->make(true);
 
     }
+
+    
     public function create(){
     /* $tipos =DB::table('tiposProyectos')
     	   			->select('tipoProyecto as tipo','id')
@@ -69,6 +71,7 @@ class proyectoController extends Controller
     
     //dd($request->all());
     $file=$request['path'];
+    //dd($file->openFile()->fread($file->getSize()));
     $imagen=$file->openFile()->fread($file->getSize());
     
     $proyecto= new Proyectos();

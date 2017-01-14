@@ -10,7 +10,7 @@
 	<div id="blue">
 	    <div class="container">
 			<div class="row">
-				<h3>PROYECTOS DE GRADUACI&Oacute;N</h3>
+				<h3>PROYECTOS DE DISPONIBLES</h3>
 			</div><!-- /row -->
 	    </div> <!-- /container -->
 	</div><!-- /blue -->
@@ -58,15 +58,15 @@
 		 		
 		 		<h4>Proyectos</h4>
 		 		<div class="hline"></div>
-			 		@foreach($sumapry as $sump)
-			 				@if($sump->tipo==1)
-				 				<p><a href="{{route('proyectos.graduacion')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
-				 			@elseif($sump->tipo==2)
-				 				<p><a href="{{route('proyectos.horas')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
-				 			@elseif($sump->tipo==3)
-				 				<p><a href="{{route('proyectos.disponibles')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
-				 			@endif
-				 		@endforeach
+		 			@foreach($sumapry as $sump)
+		 				@if($sump->tipo==1)
+			 				<p><a href="{{route('proyectos.graduacion')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
+			 			@elseif($sump->tipo==2)
+			 				<p><a href="{{route('proyectos.horas')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
+			 			@elseif($sump->tipo==3)
+			 				<p><a href="{{route('proyectos.disponibles')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
+			 			@endif
+			 		@endforeach
 
 		 		<div class="spacing"></div>
 		 		
@@ -96,25 +96,6 @@
 		            
 		 		<div class="spacing"></div>
 		 		
-		 	<!--	<h4>Popular Tags</h4>
-		 		<div class="hline"></div>
-		 			<p>
-		            	<a class="btn btn-theme" href="#" role="button">Design</a>
-		            	<a class="btn btn-theme" href="#" role="button">Wordpress</a>
-		            	<a class="btn btn-theme" href="#" role="button">Flat</a>
-		            	<a class="btn btn-theme" href="#" role="button">Modern</a>
-		            	<a class="btn btn-theme" href="#" role="button">Wallpaper</a>
-		            	<a class="btn btn-theme" href="#" role="button">HTML5</a>
-		            	<a class="btn btn-theme" href="#" role="button">Pre-processor</a>
-		            	<a class="btn btn-theme" href="#" role="button">Developer</a>
-		            	<a class="btn btn-theme" href="#" role="button">Windows</a>
-		            	<a class="btn btn-theme" href="#" role="button">Phothosop</a>
-		            	<a class="btn btn-theme" href="#" role="button">UX</a>
-		            	<a class="btn btn-theme" href="#" role="button">Interface</a>		            	
-		            	<a class="btn btn-theme" href="#" role="button">UI</a>		            	
-		            	<a class="btn btn-theme" href="#" role="button">Blog</a>		            	
-		 			</p>
-	 		</div> -->
 	 		</div>
 	 	</div>
 	</div>

@@ -37,6 +37,15 @@ Route::get('/proyectos/graduacion',[
     'as' => 'proyectos.graduacion',
 	'uses' => 'MainController@getGraduacion'
 ]);
+Route::get('/proyectos/horas',[
+    'as' => 'proyectos.horas',
+    'uses' => 'MainController@getHorasSociales'
+]);
+
+Route::get('/proyectos/disponibles',[
+    'as' => 'proyectos.disponibles',
+    'uses' => 'MainController@getDisponibles'
+]);
 
 Route::get('/fases',[
 	'as' => 'fases',
@@ -66,9 +75,7 @@ Route::get('/logout', ['as' => 'logout', 'uses' => 'LoginController@getLogout'])
 
 
 
-/* Rutas para proyectos*/
-Route::resource('proyectos','ProyectoController');
 
-/* Rutas para Noticias */
-Route::resource('noticias','NoticiasController');
+
+
 

@@ -10,7 +10,7 @@
 	<div id="blue">
 	    <div class="container">
 			<div class="row">
-				<h3>PROYECTOS DE GRADUACI&Oacute;N</h3>
+				<h3>PROYECTOS DE HORAS SOCIALES</h3>
 			</div><!-- /row -->
 	    </div> <!-- /container -->
 	</div><!-- /blue -->
@@ -58,15 +58,15 @@
 		 		
 		 		<h4>Proyectos</h4>
 		 		<div class="hline"></div>
-			 		@foreach($sumapry as $sump)
-			 				@if($sump->tipo==1)
-				 				<p><a href="{{route('proyectos.graduacion')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
-				 			@elseif($sump->tipo==2)
-				 				<p><a href="{{route('proyectos.horas')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
-				 			@elseif($sump->tipo==3)
-				 				<p><a href="{{route('proyectos.disponibles')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
-				 			@endif
-				 		@endforeach
+		 			@foreach($sumapry as $sump)
+		 				@if($sump->tipo==1)
+			 				<p><a href="{{route('proyectos.graduacion')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
+			 			@elseif($sump->tipo==2)
+			 				<p><a href="{{route('proyectos.horas')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
+			 			@elseif($sump->tipo==3)
+			 				<p><a href="{{route('proyectos.disponibles')}}"><i class="fa fa-angle-right"></i>{!!$sump->tipoProyecto!!}</a> <span class="badge badge-theme pull-right">{!!$sump->cantidad!!}</span></p>
+			 			@endif
+			 		@endforeach
 
 		 		<div class="spacing"></div>
 		 		
