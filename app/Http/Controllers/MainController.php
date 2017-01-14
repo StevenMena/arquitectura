@@ -52,6 +52,7 @@ class MainController extends Controller
             ->groupBy('pry.tipo','tipop.tipoProyecto')
             ->get();
         $data['sumapry']=$sumapry;
+        $data['lastproyectos']=Proyectos::orderBy('fechaCreacion','desc')->limit(5)->select('idProyecto','nombreProyecto','imagen','mimeType','fechaCreacion')->get();
         //$data
         //dd($data);
         return view('menu.blog',$data);
@@ -67,6 +68,7 @@ class MainController extends Controller
             ->groupBy('pry.tipo','tipop.tipoProyecto')
             ->get();
         $data['sumapry']=$sumapry;
+        $data['lastproyectos']=Proyectos::orderBy('fechaCreacion','desc')->limit(5)->select('idProyecto','nombreProyecto','imagen','mimeType','fechaCreacion')->get();
         //$data
         //dd($sumapry);
         return view('menu.proyectoHoras',$data);
@@ -84,7 +86,7 @@ class MainController extends Controller
         $data['sumapry']=$sumapry;
         $data['lastproyectos']=Proyectos::orderBy('fechaCreacion','desc')->limit(5)->select('idProyecto','nombreProyecto','imagen','mimeType','fechaCreacion')->get();
         //$data
-        dd($data['lastproyectos']);
+        //dd($data['lastproyectos']);
         return view('menu.proyectoDisponibles',$data);
     }
 
