@@ -166,6 +166,7 @@ class proyectoController extends Controller
         $estudiante->apellidos=$request->apellidos;
         $estudiante->email=$request->email;
         $estudiante->telefono=$request->telefono;
+        $estudiante->idProyecto=$request->idProyecto;
         $estudiante->save();
          
         Session::flash('message','Se han guardo sus datos correctamente');
