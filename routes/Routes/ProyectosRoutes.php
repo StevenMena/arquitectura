@@ -18,5 +18,9 @@ Route::group(['prefix' => 'proyectos' , 'middleware' => ['auth']], function(){
 			'as' => 'proyecto.destroy',
 			'uses' => 'ProyectoController@eliminar'
 	 	]);	
-		
+	
+	Route::post('/comentario',[
+			'as' => 'guardar.estudiante',
+			'uses' => 'proyectoController@guardar'
+	 	]);	
 });

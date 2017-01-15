@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\tiposProyectos;
 use App\Proyectos;
+use App\estudiantes;
 use Session;
 use Redirect;
 use Image;
@@ -160,6 +161,14 @@ class proyectoController extends Controller
     }
 
     public function guardar(Request $request){
-        return "mensaje";
+        $estudiante = new estudiantes();
+        $estudiante->nombre=$request->nombre;
+        $estudiante->apellidos=$request->apellidos;
+        $estudiante->email=$request->email;
+        $estudiante->telefono=$request->telefono;
+        $estudiante->save();
+         
+        Session::flash('message','Se han guardo sus datos correctamente');
+                return redirect()->route('proyectos.leer',$request->idProyecto);
     }
 }
