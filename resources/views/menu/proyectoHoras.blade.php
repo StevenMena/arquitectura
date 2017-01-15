@@ -32,8 +32,7 @@
 				 		<p><img class="img-responsive" src="data:{{$pry->mimeType}};base64,{{base64_encode($pry->imagen)}}"></p>
 				 		<a href="single-post.html"><h3 class="ctitle">{!!$pry->nombreProyecto!!}</h3></a>
 				 		<p><csmall>Posted: {{date_format(date_create($pry->fechaCreacion),'F j, Y')}}.</csmall> | <csmall2>By: Admin</csmall2></p>
-				 		<p>{!!$pry->descripcion!!}</p>
-				 		<p><a href="single-post.html">[Read More]</a></p>
+				 		<p>{!!$pry->descripcion!!}</p><p><a href="{{route('proyectos.leer',['id'=>$pry->idProyecto])}}">[Read More]</a></p>
 				 		<div class="fb-share-button" data-href="http://YourPageLink.com" data-layout="button_count"></div>
 				 		<div class="hline"></div>
 				 		
