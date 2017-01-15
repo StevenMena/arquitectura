@@ -49,7 +49,7 @@ class NoticiasController extends Controller
       } else {
         Session::flash('message','Se ha superado el número de noticias almacenadas, por favor elimine noticias antiguas');
       }
-    	return redirect::to('/noticias');
+    	return redirect::to('/noticias/noticias');
 
     }
 
@@ -72,7 +72,7 @@ class NoticiasController extends Controller
         $noticia->save();
 
    		Session::flash('message','Noticia actualizado');
-    	return redirect::to('/noticias');     
+    	return redirect::to('/noticias/noticias');     
     
     }
 
@@ -83,7 +83,7 @@ class NoticiasController extends Controller
     public function show($id){
     	Noticias::destroy($id);
     	Session::flash('message','Noticia Eliminada');
-    	return redirect::to('/noticias');     
+    	return redirect::to('/noticias/noticias');     
     	
     }
 }
