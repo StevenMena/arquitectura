@@ -41,7 +41,7 @@ class UsuarioController extends Controller
  			'password'=>$request['pass'],
     		]);
         Session::flash('message','Usuario creado correctamente');
-        return redirect::to('/user');     
+        return redirect::to('/usuarios/user');     
     }
 
     public function edit($id){
@@ -58,7 +58,7 @@ class UsuarioController extends Controller
     $user->fill($request->all());
     $user->save();
     Session::flash('message','Usuario actualizado');
-    return redirect::to('/user');     
+    return redirect::to('/usuarios/user');     
     }
 
     public function destroy($id){
@@ -68,6 +68,6 @@ class UsuarioController extends Controller
     public function show($id){
         Usuario::destroy($id);
         Session::flash('message','Usuario Eliminado correctamente');
-        return redirect::to('/user');
+        return redirect::to('/usuarios/user');
     }
 }
