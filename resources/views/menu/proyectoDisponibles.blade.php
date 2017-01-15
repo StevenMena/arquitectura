@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-	
+
 
 
 	<!-- *****************************************************************************************************************
@@ -15,36 +15,36 @@
 	    </div> <!-- /container -->
 	</div><!-- /blue -->
 
-	 
+
 	<!-- *****************************************************************************************************************
 	 BLOG CONTENT
 	 ***************************************************************************************************************** -->
 
 	 <div class="container mtb">
 	 	<div class="row">
-	 	
+
 	 		<! -- BLOG POSTS LIST -->
 	 		<div class="col-lg-8">
 	 			<! -- Blog Post 1 -->
 	 			@if(count($proyecto)>=1)
 		 			@foreach($proyecto as $pry)
-		 			
+
 				 		<p><img class="img-responsive" src="data:{{$pry->mimeType}};base64,{{base64_encode($pry->imagen)}}"></p>
 				 		<h3 class="ctitle">{!!$pry->nombreProyecto!!}</h3>
 				 		<p><csmall>Posted: {{date_format(date_create($pry->fechaCreacion),'F j, Y')}}.</csmall> | <csmall2>By: Admin</csmall2></p>
-				 		<p>{!!$pry->descripcion!!}</p>
+				 		<p>{!!str_limit($pry->descripcion, 350)!!}</p>
 				 		<p><a href="{{route('proyectos.leer',['id'=>$pry->idProyecto])}}">[Read More]</a></p>
 				 		<div class="fb-share-button" data-href="http://YourPageLink.com" data-layout="button_count"></div>
 				 		<div class="hline"></div>
-				 		
+
 				 		<div class="spacing"></div>
 			 		@endforeach
 			 	@else
 			 		<div class="alert alert-warning" role="alert">No hay Proyectos disponibles para mostrar.</div>
 		 		@endif
 			</div><!--/col-lg-8 -->
-	 		
-	 		
+
+
 	 		<!-- SIDEBAR -->
 	 		<div class="col-lg-4">
 		 		<!--<h4>Search</h4>
@@ -53,9 +53,9 @@
 		 				<br/>
 		 				<input type="text" class="form-control" placeholder="Search something">
 		 			</p>-->
-		 			
+
 		 		<div class="spacing"></div>
-		 		
+
 		 		<h4>Proyectos</h4>
 		 		<div class="hline"></div>
 		 			@foreach($sumapry as $sump)
@@ -69,7 +69,7 @@
 			 		@endforeach
 
 		 		<div class="spacing"></div>
-		 		
+
 		 		<h4>Recientes</h4>
 		 		<div class="hline"></div>
 					<ul class="popular-posts">
@@ -81,9 +81,9 @@
 		                </li>
 		               	@endforeach
 		            </ul>
-		            
+
 		 		<div class="spacing"></div>
-		 		
+
 	 		</div>
 	 	</div>
 	</div>
