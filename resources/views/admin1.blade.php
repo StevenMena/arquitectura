@@ -70,6 +70,7 @@
 				</div><!-- /.container-fluid -->
 
 	<!-- TABLA ESTUDIANTES -->
+<h3> ESTUDIANTES INTERESADOS EN PROYECTOS</h3>
 <div class="table-responsive">
     <table class="table table-striped table-hover" id="tr-est" style="font-size:13px;" width="100%">
         <thead class="the-box dark full">
