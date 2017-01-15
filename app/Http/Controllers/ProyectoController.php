@@ -172,4 +172,14 @@ class proyectoController extends Controller
         Session::flash('message','Se han guardo sus datos correctamente');
                 return redirect()->route('proyectos.leer',$request->idProyecto);
     }
+
+    public function getDataRowsEstudiantes(){
+        $estudiantes=DB::table('estudiante as est')
+          ->join('proyectos as pry','est.idProyecto','=','pry.idProyecto')
+          ->select(DB::raw('concat(est.nombre," ",est.apellidos) as nombre'),      'est.email','est.telefono','est.fechaCreacion','pry.idProyecto','pry.nombreProyecto')
+          ->get();
+        return Datatables::of($estudiantes)
+        ->make(true);
+      
+    }
 }

@@ -21,6 +21,11 @@ Route::group(['prefix' => 'proyectos' , 'middleware' => ['auth']], function(){
 	
 	Route::post('/comentario',[
 			'as' => 'guardar.estudiante',
-			'uses' => 'proyectoController@guardar'
+			'uses' => 'ProyectoController@guardar'
 	 	]);	
+	Route::get('/dt-row-data-inicio',[
+	 		'as' => 'dt.row.data.estudiantes',
+			'uses' => 'ProyectoController@getDataRowsEstudiantes'
+	 	]);	
+
 });

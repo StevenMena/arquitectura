@@ -16,6 +16,8 @@
 		{!! Html::style('plugins/font-awesome/css/font-awesome.min.css') !!} 
 		{!! Html::style('css/style-admin.css') !!} 
 		{!! Html::style('css/style-responsive.css') !!} 
+		{!! Html::style('plugins/datatable/css/bootstrap.datatable.min.css') !!} 
+
  		
 		@yield('css')
 
@@ -66,7 +68,28 @@
 				@yield('contenido')
 								
 				</div><!-- /.container-fluid -->
-				
+
+	<!-- TABLA ESTUDIANTES -->
+<div class="table-responsive">
+    <table class="table table-striped table-hover" id="tr-est" style="font-size:13px;" width="100%">
+        <thead class="the-box dark full">
+            <tr>
+                <th>ID proyecto</th>
+		  		<th>Nombre Proyecto</th>
+		  		<th>Estudiante</th>
+		  		<th>Correo</th>
+		  		<th>Telefono</th>
+		  		<th>Fecha Ingreso</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div><!-- /.table-responsive -->
+
+
+</div>
+
+
 				<!-- BEGIN FOOTER -->
 				<footer>
 					&copy; 2016 <a href="#"></a><br />
@@ -97,6 +120,40 @@
 		{!! Html::script('plugins/nicescroll/jquery.nicescroll.js') !!}
 		{!! Html::script('plugins/slimscroll/jquery.slimscroll.min.js') !!}
 		{!! Html::script('plugins/backstretch/jquery.backstretch.min.js') !!}
+		{!! Html::script('plugins/datatable/js/jquery.dataTables.min.js') !!}
+		{!! Html::script('plugins/datatable/js/bootstrap.datatable.js') !!}
+
+<script>
+    
+$( document ).ready(function(){
+   var table = $('#tr-est').DataTable({
+        filter: true,
+        serverSide: true,
+        
+        ajax: '{!! route('dt.row.data.estudiantes') !!}',
+        columns: [  
+            
+            
+            {data: 'idProyecto', name: 'pry.idProyecto'},
+            {data: 'nombreProyecto', name: 'pry.nombreProyecto'},
+            {data: 'nombre', name: 'nombre'},
+            {data: 'email', name: 'email'},
+            {data: 'telefono', name: 'telefono'},
+            {data: 'fechaCreacion', name: 'pry.fechaCreacion'}
+                                  
+        ],
+    
+        
+        language: {
+            "url": "{{ asset('plugins/datatable/lang/es.json') }}"
+        },
+        order: [[1, 'desc']]
+       
+    });
+});
+</script>
+
+
  
 		<!-- PLUGINS -->
 		
