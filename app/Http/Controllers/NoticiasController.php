@@ -65,8 +65,7 @@ class NoticiasController extends Controller
         /* Busca la noticia*/
     	$noticia=Noticias::find($id);
     	/* Convierte contenido para guardar en db
-    	$file=$request['path'];
-    	$imagen=$file->openFile()->fread($file->getSize());
+
         /* Asigna campos para actualizar*/
         $noticia->fill($request->all());
         $noticia->save();
