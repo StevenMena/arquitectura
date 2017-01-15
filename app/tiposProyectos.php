@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class tiposProyectos extends Model
 {
 
-protected $table = 'tiposProyectos';
+protected $table = 'tiposproyectos';
 
 protected $fillable = [
         'tipoProyecto','estado',

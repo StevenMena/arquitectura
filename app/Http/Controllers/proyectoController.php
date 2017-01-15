@@ -24,8 +24,7 @@ class proyectoController extends Controller
                     ['nom'  =>  'Gestion de Proyectos', 'url' => '#'],
                     ['nom'  =>  'Lista de Proyectos', 'url' => '#']
                 ]]; 
-
-    
+        
         return view('proyectos.index',$data);
 
     }

@@ -27,7 +27,11 @@
 	    	<td>{{$user->nombre}}</td>
 			<td>{{$user->apellidos}}</td>
 			<td>{{$user->usuario}}</td>
-			<td>{{$user->estado}}</td>
+			@if($user->estado=='1'||$user->estado=='A')
+            	<td>Activo</td>
+            @else
+                <td>Inactivo</td>
+            @endif
 			<td>{{$user->tipo}}</td>
 			<td> {!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-warning'])!!} 
 			{!!link_to_route('user.destroy', $title = 'Eliminar',$parameters=$user->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>

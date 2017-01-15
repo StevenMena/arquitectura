@@ -24,7 +24,11 @@
   	<tbody>
 	    	<td>{{$noticia->nombreNoticia}}</td>
 			<td>{{$noticia->textoNoticia}}</td>
-            <td>{{$noticia->estado}}</td>
+			@if($noticia->estado==1)
+            	<td>Activo</td>
+            @else
+                <td>Inactivo</td>
+            @endif
 			<td> {!!link_to_route('noticias.edit', $title = 'Editar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-warning'])!!} 
 			{!!link_to_route('noticias.destroy', $title = 'Eliminar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
     </tbody>
