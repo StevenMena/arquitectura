@@ -16,7 +16,8 @@ class MainController extends Controller
                 ,'breadcrumb'       => [
                     ['nom'  =>  'Gestion de Usuarios', 'url' => '#'],
                     ['nom'  =>  'Lista de Usuarios', 'url' => '#']
-                ]];  
+                ]];
+
         $noticias= DB::table('noticias')
                     ->where('estado','1')
                     ->get();

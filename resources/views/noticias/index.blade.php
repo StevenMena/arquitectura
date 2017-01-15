@@ -35,7 +35,7 @@
   @endforeach
 </table> 
 
-{!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+{!!link_to_route('noticias.create', $title = 'Crear Noticia', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
 </div>
 
 @endsection

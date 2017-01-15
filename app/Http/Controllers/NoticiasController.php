@@ -10,10 +10,10 @@ use Redirect;
 class NoticiasController extends Controller
 {
     public function index(){
-    $data = ['title'            => 'Gestion de Usuarios'
+    $data = ['title'            => 'Gestion de Noticias'
                 ,'subtitle'         => ''
                 ,'breadcrumb'       => [
-                    ['nom'  =>  'Gestion de Usuarios', 'url' => '#'],
+                    ['nom'  =>  'Gestion de Noticias', 'url' => '#'],
                     ['nom'  =>  'Lista de Usuarios', 'url' => '#']
                 ]]; 
   	$noticias= Noticias::all();
@@ -23,11 +23,11 @@ class NoticiasController extends Controller
     }
 
     public function create(){
-    	 $data = ['title'            => 'Gestion de Usuarios'
+    	 $data = ['title'            => 'Gestion de Noticias'
                 ,'subtitle'         => ''
                 ,'breadcrumb'       => [
-                    ['nom'  =>  'Gestion de Usuarios', 'url' => '#'],
-                    ['nom'  =>  'Lista de Usuarios', 'url' => '#']
+                    ['nom'  =>  'Gestion de Noticias', 'url' => '#'],
+                    ['nom'  =>  'Lista de Noticias', 'url' => '#']
                 ]]; 
    
     	return view('noticias.crear', $data);
