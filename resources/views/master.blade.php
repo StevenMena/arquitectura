@@ -31,7 +31,7 @@
       margin: auto;
   }
   </style>
- 
+
     {!!Html::script('js/script.js')!!}
     @yield('head')
 
@@ -49,7 +49,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">ESCUELA DE ARQUITECTURA</a>
+          <a class="navbar-brand" href="{{route('index')}}">ESCUELA DE ARQUITECTURA</a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
@@ -59,8 +59,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROYECCION SOCIAL<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="{{route('proyectos.graduacion')}}">PROYECTOS DE GRADUACION</a></li>
-                <li><a href="{{route('proyectos.disponibles')}}">PROYECTOS DISPONIBLES</a></li>
-                <li><a href="{{route('proyectos.horas')}}">PROYECTOS SOCIALES</a></li>
+                <li><a href="{{route('proyectos.horas')}}">PROYECTOS PARA HORAS SOCIALES</a></li>
+                <li><a href="{{route('proyectos.disponibles')}}">PROYECTOS SOCIALES</a></li>
 <!--                <li><a href="single-project.html">SINGLE PROJECT</a></li>-->
               </ul>
             </li>
@@ -76,7 +76,7 @@
             <li><a href="{{route('contacto')}}">CONTACTO</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-</div>     
+</div>
 
     </div>
 
@@ -89,7 +89,7 @@
   <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          
+
         </div>
         <div align="center" class="col-lg-4">
           <p>
@@ -101,34 +101,34 @@
             <a href="{{route('login.index')}}" target="_blank">Administración</a>
           </p>
         </div>
-      
+
       </div><! --/row -->
     </div><! --/container -->
    </div>
 
 
-   
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+
     {!!Html::script('js/jquery.min.js')!!}
     {!!Html::script('js/bootstrap.min.js')!!}
-   
+
     {!!Html::script('js/jquery.hoverdir.js')!!}
     {!!Html::script('js/jquery.hoverex.min.js')!!}
     {!!Html::script('js/jquery.prettyPhoto.js')!!}
     {!!Html::script('js/jquery.isotope.min.js')!!}
     {!!Html::script('js/custom.js')!!}
-    
+
     @yield('js')
 
 <script>
 /*footer
       $("#footerwrap").load("footer.html");
-      
+
       $("#navbar").load("navbar.html");
-      
+
 */
 // Portfolio
 (function($) {
@@ -136,11 +136,11 @@
   var $container = $('.portfolio'),
     $items = $container.find('.portfolio-item'),
     portfolioLayout = 'fitRows';
-    
+
     if( $container.hasClass('portfolio-centered') ) {
       portfolioLayout = 'masonry';
     }
-        
+
     $container.isotope({
       filter: '*',
       animationEngine: 'best-available',
@@ -153,12 +153,12 @@
     masonry: {
     }
     }, refreshWaypoints());
-    
+
     function refreshWaypoints() {
       setTimeout(function() {
-      }, 1000);   
+      }, 1000);
     }
-        
+
     $('nav.portfolio-filter ul a').on('click', function() {
         var selector = $(this).attr('data-filter');
         $container.isotope({ filter: selector }, refreshWaypoints());
@@ -166,11 +166,11 @@
         $(this).addClass('active');
         return false;
     });
-    
-    function getColumnNumber() { 
-      var winWidth = $(window).width(), 
+
+    function getColumnNumber() {
+      var winWidth = $(window).width(),
       columnNumber = 1;
-    
+
       if (winWidth > 1200) {
         columnNumber = 5;
       } else if (winWidth > 950) {
@@ -183,31 +183,31 @@
         columnNumber = 1;
       }
         return columnNumber;
-      }       
-      
+      }
+
       function setColumns() {
-        var winWidth = $(window).width(), 
-        columnNumber = getColumnNumber(), 
+        var winWidth = $(window).width(),
+        columnNumber = getColumnNumber(),
         itemWidth = Math.floor(winWidth / columnNumber);
-        
-        $container.find('.portfolio-item').each(function() { 
-          $(this).css( { 
-          width : itemWidth + 'px' 
+
+        $container.find('.portfolio-item').each(function() {
+          $(this).css( {
+          width : itemWidth + 'px'
         });
       });
     }
-    
-    function setPortfolio() { 
+
+    function setPortfolio() {
       setColumns();
       $container.isotope('reLayout');
     }
-      
-    $container.imagesLoaded(function () { 
+
+    $container.imagesLoaded(function () {
       setPortfolio();
     });
-    
-    $(window).on('resize', function () { 
-    setPortfolio();          
+
+    $(window).on('resize', function () {
+    setPortfolio();
   });
 })(jQuery);
 </script>
