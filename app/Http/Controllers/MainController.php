@@ -46,7 +46,7 @@ class MainController extends Controller
         $proyecto=Proyectos::find($id);
         $data=[];
         $data['proyecto']=$proyecto;
-        return view('menu.leerProyecto',$data);
+        return view('menu.LeerProyecto',$data);
     }
 
     public function getContacto(){
