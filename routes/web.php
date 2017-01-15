@@ -74,7 +74,7 @@ Route::get('/admin', function () {
 });
 
 
-Route::post('comentario', 'PostController@guardar');
+Route::post('comentario', 'proyectoController@guardar');
 
 /* Rutas para login*/
 Route::resource('login','LoginController');

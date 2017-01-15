@@ -33,7 +33,7 @@
 
 	<div class="container mtb">
      <h3 class="ctitle"> Te interesa el proyecto ...</h3>
-     {{Form::open(array('route'=>'comentario', 'method'=>'POST'))}}
+     {{Form::open(array('route'=>'comentario.store', 'method'=>'POST'))}}
 	    <div class="form-group">
 			{!!Form::label('Nombre:')!!}
 			{!!Form::text('nombre', null, ['class'=>'form-control text-uppercase'])!!}

@@ -15,12 +15,6 @@ class LoginController extends Controller
       if(Auth::check()){
         $data = ['title'      => 'BIENVENIDO AL PANEL DE ADMINISTRACION DEL SITIO DE LA ESCUELA DE ARQUITECTURA' 
         ,'subtitle'     => ''];
-      $tipo=DB::table('usuarios')
-      ->select('id_tipoUsuario')
-      ->where('usuario',$datos['usuariotxt'])
-      ->get();
-      $data['tipo']=$tipo;
-     
         return view('admin1',$data);
       }else{
         return view('login');   
