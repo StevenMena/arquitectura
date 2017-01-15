@@ -1,6 +1,9 @@
 @extends('admin1')
 
+
 @section('contenido')
+
+
 
 
 @if(Session::has('message'))
@@ -11,7 +14,10 @@
 @endif
 
 
+
+
 <div class="the-box">
+
 
 <table class="table">
 	 <thead>
@@ -33,13 +39,15 @@
                 <td>Inactivo</td>
             @endif
 			<td>{{$user->tipo}}</td>
-			<td> {!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-warning'])!!} 
+			<td> {!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-warning'])!!}
 			{!!link_to_route('user.destroy', $title = 'Eliminar',$parameters=$user->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
     </tbody>
   @endforeach
-</table> 
+</table>
+
 
 {!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
 </div>
+
 
 @endsection
