@@ -37,6 +37,11 @@ Route::get('/proyectos/graduacion',[
     'as' => 'proyectos.graduacion',
 	'uses' => 'MainController@getGraduacion'
 ]);
+Route::get('/proyectos/leer/{id}',[
+    'as' => 'proyectos.leer',
+    'uses' => 'MainController@getProyecto'
+]);
+
 Route::get('/proyectos/horas',[
     'as' => 'proyectos.horas',
     'uses' => 'MainController@getHorasSociales'

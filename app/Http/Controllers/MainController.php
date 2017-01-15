@@ -42,6 +42,13 @@ class MainController extends Controller
         return view('menu.plan');
     }
 
+    public function getProyecto($id){
+        $proyecto=Proyectos::find($id);
+        $data=[];
+        $data['proyecto']=$proyecto;
+        return view('menu.leerProyecto',$data);
+    }
+
     public function getGraduacion(){
         $data=[];
         $proyecto = Proyectos::where('tipo',1)->get();

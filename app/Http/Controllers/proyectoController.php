@@ -159,4 +159,8 @@ class proyectoController extends Controller
                 return redirect()->route('proyectos.index');
 
     }
+
+    public function guardar(Request $request){
+        return "mensaje";
+    }
 }
