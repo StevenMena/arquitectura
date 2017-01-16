@@ -8,7 +8,11 @@ use App\Noticias;
 use Session;
 use Redirect;
 class NoticiasController extends Controller
-{
+{   
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index(){
     $data = ['title'            => 'Gestion de Noticias'
                 ,'subtitle'         => ''
@@ -54,7 +58,7 @@ class NoticiasController extends Controller
     }
 
     public function edit($id){
-    	$data = ['title'            => 'Gestion de Usuarios' 
+    	$data = ['title'            => 'Gestion de Noticias' 
                 ,'subtitle'         => ''];
     	$noticia=Noticias::find($id);
     	$data['noticia']=$noticia;

@@ -12,7 +12,9 @@
 
 
 <div class="the-box">
-{!!link_to_route('noticias.create', $title = 'Crear Noticia', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+{!!link_to_route('noticias.create','Crear Noticia', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+<br>
+<br>
 <table class="table">
 	<thead>
 		  <th>Noticia</th>
@@ -29,8 +31,8 @@
             @else
                 <td>Inactivo</td>
             @endif
-			<td> {!!link_to_route('noticias.edit', $title = 'Editar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-warning'])!!}
-			{!!link_to_route('noticias.destroy', $title = 'Eliminar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
+			<td> {!!link_to_route('noticias.edit','Editar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-warning'])!!}
+			{!!link_to_route('noticias.destroy','Eliminar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
     </tbody>
   @endforeach
 </table>

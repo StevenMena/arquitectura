@@ -69,9 +69,6 @@ Route::get('/plan',[
 ]);
 
 
-Route::get('/admin', function () {
-    return view('admin');
-});
 
 /*Ruta para estudiantes interesados*/
 Route::get('/interesados',[

@@ -17,8 +17,9 @@
 
 
 <div class="the-box">
-{!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
-
+{!!link_to_route('user.create','Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+<br>
+<br>	
 <table class="table">
 	 <thead>
 		  <th>Nombre</th>
@@ -39,8 +40,8 @@
                 <td>Inactivo</td>
             @endif
 			<td>{{$user->tipo}}</td>
-			<td> {!!link_to_route('user.edit', $title = 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-warning'])!!}
-			{!!link_to_route('user.destroy', $title = 'Eliminar',$parameters=$user->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
+			<td> {!!link_to_route('user.edit', 'Editar',$parameters=$user->id, $attributes = ['class'=>'btn btn-warning'])!!}
+			{!!link_to_route('user.destroy','Eliminar',$parameters=$user->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
     </tbody>
   @endforeach
 </table>

@@ -20,7 +20,9 @@
 
 
 <div class="the-box">
- {!!link_to_route('proyectos.create', $title = 'Crear Proyecto', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+ {!!link_to_route('proyectos.create','Crear Proyecto', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+ <br>
+<br>
   <div class="table-responsive">
     <table class="table table-striped table-hover" id="tr-pry" style="font-size:13px;" width="100%">
         <thead class="the-box dark full">
