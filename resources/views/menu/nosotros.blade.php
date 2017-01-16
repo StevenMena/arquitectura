@@ -14,7 +14,7 @@
 	    </div> <!-- /container -->
 	</div><!-- /blue -->
 
-	 
+
 	<!-- *****************************************************************************************************************
 	 AGENCY ABOUT
 	 ***************************************************************************************************************** -->
@@ -24,7 +24,7 @@
 	 		<div class="col-lg-6">
 	 			<img class="img-responsive" src="/img/agency.jpg" alt="">
 	 		</div>
-	 		
+
 	 		<div class="col-lg-6">
 		 		<h2>Objetivos de la Carrera</h2>
 		 		<h4>General</h4>
@@ -48,78 +48,79 @@
 	 <div class="container mtb">
 	 	<div class="row centered">
 		 	<h3 class="mb">Autoridades de la Escuela</h3>
-		 	
+
 		 	<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="he-wrap tpl6">
-				<img src="assets/img/team/team01.jpg" alt="">
+				<img src="img/team/user.png" alt="">
+				<i class="fa fa-user-circle-o"></i>
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
                     	</div><!-- he bg -->
-					</div><!-- he view -->		
+					</div><!-- he view -->
 				</div><!-- he wrap -->
-				<h4>Mario Ortiz</h4>
+				<h4>Arq. Manuel Ortiz Garméndez</h4>
 				<h5 class="ctitle">Director de la Escuela</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
 				<div class="hline"></div>
 		 	</div><! --/col-lg-3 -->
 
 		 	<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="he-wrap tpl6">
-				<img src="assets/img/team/team02.jpg" alt="">
+				<img src="img/team/user.png" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
                     	</div><!-- he bg -->
-					</div><!-- he view -->		
+					</div><!-- he view -->
 				</div><!-- he wrap -->
-				<h4>Paul Jameson</h4>
-				<h5 class="ctitle">LEAD DESIGNER</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h4>Arq. Francisco Álvarez</h4>
+				<h5 class="ctitle">Subdirector de Escuela</h5>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
 				<div class="hline"></div>
 		 	</div><! --/col-lg-3 -->
 
 		 	<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="he-wrap tpl6">
-				<img src="assets/img/team/team03.jpg" alt="">
+				<img src="img/team/user.png" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
                     	</div><!-- he bg -->
-					</div><!-- he view -->		
+					</div><!-- he view -->
 				</div><!-- he wrap -->
-				<h4>Laura Sommers</h4>
-				<h5 class="ctitle">LEAD DEVELOPER</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h4>Arq. Francisco Álvarez</h4>
+				<h5 class="ctitle">Secretario de Escuela</h5>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
 				<div class="hline"></div>
 		 	</div><! --/col-lg-3 -->
 
 		 	<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="he-wrap tpl6">
-				<img src="assets/img/team/team04.jpg" alt="">
+				<img src="img/team/user.png" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
                     	</div><!-- he bg -->
-					</div><!-- he view -->		
+					</div><!-- he view -->
 				</div><!-- he wrap -->
-				<h4>Martin Blunt</h4>
-				<h5 class="ctitle">MARKETING</h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h4>Arq. Maria Sanchez de Ibáñez</h4>
+				<h5 class="ctitle">Coordinadora de Trabajos de Graduación</h5>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
 				<div class="hline"></div>
-		 	</div><! --/col-lg-3 -->		 	
-		 	
+		 	</div><! --/col-lg-3 -->
+
 	 	</div><! --/row -->
 	 </div><! --/container -->
-	 
+
 	<!-- *****************************************************************************************************************
 	 TESTIMONIALS
 	 ***************************************************************************************************************** -->
@@ -134,8 +135,8 @@
 	 		</div><! --/row -->
 	 	</div><! --/container -->
 	 </div><! --/twrap -->
-	 
-@endsection	
+
+@endsection
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -154,7 +155,7 @@
 
 
     {!!Html::script('assets/js/custom.js')!!}
-    
+
  <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/retina-1.1.0.js"></script>
