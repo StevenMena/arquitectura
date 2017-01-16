@@ -73,15 +73,12 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
-
+/*Ruta para estudiantes interesados*/
+Route::get('/interesados',[
+    'as' => 'interesados',
+    'uses' => 'MainController@getInteresados'
+]);
 
 /* Rutas para login*/
 Route::resource('login','LoginController');
-Route::get('/logout', ['as' => 'logout', 'uses' => 'LoginController@getLogout']); 
-
-
-
-
-
-
-
+Route::get('/logout', ['as' => 'logout', 'uses' => 'LoginController@getLogout']);

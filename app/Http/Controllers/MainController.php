@@ -27,6 +27,11 @@ class MainController extends Controller
         return view('inicio',$data);
     }
 
+    public function getInteresados(){
+
+    	return view('interesados.index');
+    }
+
     public function getFases(){
 
     	return view('menu.fases');
@@ -101,5 +106,5 @@ class MainController extends Controller
         return view('menu.proyectoDisponibles',$data);
     }
 
-   	
+
 }
