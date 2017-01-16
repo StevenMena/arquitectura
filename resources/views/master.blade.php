@@ -50,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">ESCUELA DE ARQUITECTURA</a>
+          <a class="navbar-brand" href="{{route('index')}}">ESCUELA DE ARQUITECTURA</a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
@@ -60,8 +60,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">PROYECCION SOCIAL<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="{{route('proyectos.graduacion')}}">PROYECTOS DE GRADUACION</a></li>
-                <li><a href="{{route('proyectos.disponibles')}}">PROYECTOS DISPONIBLES</a></li>
-                <li><a href="{{route('proyectos.horas')}}">PROYECTOS SOCIALES</a></li>
+                <li><a href="{{route('proyectos.horas')}}">PROYECTOS PARA HORAS SOCIALES</a></li>
+                <li><a href="{{route('proyectos.disponibles')}}">PROYECTOS SOCIALES</a></li>
 <!--                <li><a href="single-project.html">SINGLE PROJECT</a></li>-->
               </ul>
             </li>

@@ -24,8 +24,8 @@ class proyectoController extends Controller
                 ,'breadcrumb'       => [
                     ['nom'  =>  'Gestion de Proyectos', 'url' => '#'],
                     ['nom'  =>  'Lista de Proyectos', 'url' => '#']
-                ]]; 
-        
+                ]];
+
         return view('proyectos.index',$data);
 
     }
@@ -37,7 +37,7 @@ class proyectoController extends Controller
             ->join('usuarios as usu','pry.idUsuarioCrea','=','usu.id')
             ->select('pry.idProyecto','pry.nombreProyecto','tipo.tipoProyecto',DB::raw('concat(usu.nombre," ",usu.apellidos) as nombres'),'pry.fechaCreacion')
             ->orderBy('idProyecto','desc');
-        
+
 
         return Datatables::of($proyectos)
             ->addColumn('eliminar',function ($dt){
@@ -61,22 +61,22 @@ class proyectoController extends Controller
                 ,'breadcrumb'       => [
                     ['nom'  =>  'Gestion de Usuarios', 'url' => '#'],
                     ['nom'  =>  'Lista de Usuarios', 'url' => '#']
-                ]]; 
+                ]];
     $tipos=tiposProyectos::all();
     $data['tipos']=$tipos;
     //dd($data);
-    return view('proyectos.crear',$data);  
+    return view('proyectos.crear',$data);
     }
 
 
 
     public function store(Request $request){
-    
+
     //dd($request->all());
     $file=$request['path'];
     //dd($file->openFile()->fread($file->getSize()));
     $imagen=$file->openFile()->fread($file->getSize());
-    
+
     $proyecto= new Proyectos();
     $proyecto->nombreProyecto=$request->nombreProyecto;
     $proyecto->descripcion=$request->descripcion;
@@ -86,12 +86,12 @@ class proyectoController extends Controller
     $proyecto->mimeType=$file->getMimeType();
     $proyecto->idUsuarioCrea=1;
     $proyecto->save();
-	
+
     Session::flash('message','Se ha creado proyecto creado correctamente, puede visualizar en el menu de Proyeccion Social del sitio web.');
     return redirect()->route('proyectos.index');
     }
 
-    
+
 
     public function edit($idProyecto){
         //dd($idProyecto);
@@ -100,7 +100,7 @@ class proyectoController extends Controller
                 ,'breadcrumb'       => [
                     ['nom'  =>  'Gestion de Proyectos', 'url' => '#'],
                     ['nom'  =>  'Actualizar Proyecto', 'url' => '#']
-                ]]; 
+                ]];
         $proyecto=Proyectos::find($idProyecto);
         $data['proyecto']=$proyecto;
         $tipos=tiposProyectos::all();
@@ -118,7 +118,7 @@ class proyectoController extends Controller
         $proyecto->tipo=$request->tipo;
         $proyecto->origen=$request->origen;
         $proyecto->idUsuarioModifica=Auth::user()->id;
-        
+
             $file= $request->file('path');
             //dd($file);
             //primero verifica si hay archivos a subir
@@ -140,7 +140,7 @@ class proyectoController extends Controller
             }
         //}
         //dd($request->all());
-       
+
     }
 
     public function show(){
@@ -168,7 +168,7 @@ class proyectoController extends Controller
         $estudiante->telefono=$request->telefono;
         $estudiante->idProyecto=$request->idProyecto;
         $estudiante->save();
-         
+
         Session::flash('message','Se han guardo sus datos correctamente');
                 return redirect()->route('proyectos.leer',$request->idProyecto);
     }
@@ -180,6 +180,6 @@ class proyectoController extends Controller
           ->get();
         return Datatables::of($estudiantes)
         ->make(true);
-      
+
     }
 }

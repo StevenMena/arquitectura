@@ -4,7 +4,7 @@
 		<li class="">
 			<a href="#"><i class="fa fa-dashboard icon-sidebar"></i>Inicio</a>
 		</li>
-		
+
 		<li class="">
 			<a href="{{route('user.index')}}">
 				<i class="fa fa-users icon-sidebar"></i>
@@ -28,7 +28,15 @@
 				Gestion de Noticias
 				</a>
 		</li>
-        
+
+		<li class="">
+			<a href="{{route('interesados')}}">
+				<i class="fa fa-users icon-sidebar"></i>
+				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
+				Estudiantes Interesados
+				</a>
+		</li>
+
 	</ul>
 </div><!-- /.sidebar-left -->
 	<!-- END SIDEBAR LEFT -->

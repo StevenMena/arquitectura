@@ -11,7 +11,7 @@
 @endif
 
 
-<div class="form-group">
+<div class="the-box">
 
 <table class="table">
 	<thead>
@@ -29,12 +29,11 @@
             @else
                 <td>Inactivo</td>
             @endif
-			<td> {!!link_to_route('noticias.edit', $title = 'Editar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-warning'])!!} 
+			<td> {!!link_to_route('noticias.edit', $title = 'Editar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-warning'])!!}
 			{!!link_to_route('noticias.destroy', $title = 'Eliminar',$parameters=$noticia->id, $attributes = ['class'=>'btn btn-danger', 'onclick'=>'return confirm("Seguro que desea eliminar este registro?")'])!!}</td>
     </tbody>
   @endforeach
-</table> 
-
+</table>
 {!!link_to_route('noticias.create', $title = 'Crear Noticia', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
 </div>
 
