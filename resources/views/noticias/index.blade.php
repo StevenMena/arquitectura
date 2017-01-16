@@ -12,7 +12,7 @@
 
 
 <div class="the-box">
-
+{!!link_to_route('noticias.create', $title = 'Crear Noticia', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
 <table class="table">
 	<thead>
 		  <th>Noticia</th>
@@ -34,7 +34,7 @@
     </tbody>
   @endforeach
 </table>
-{!!link_to_route('noticias.create', $title = 'Crear Noticia', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+
 </div>
 
 @endsection

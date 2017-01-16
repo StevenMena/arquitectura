@@ -17,7 +17,7 @@
 
 
 <div class="the-box">
-
+{!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
 
 <table class="table">
 	 <thead>
@@ -46,7 +46,7 @@
 </table>
 
 
-{!!link_to_route('user.create', $title = 'Crear Usuario', $parameters=null, $attributes = ['class'=>'btn btn-primary'])!!}
+
 </div>
 
 

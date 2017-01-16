@@ -33,26 +33,40 @@
 		</div>
 	</div>
 
-	<div class="container mtb">
+	<div class="container mtb" style="border:1px solid #cecece;">
      <h3 class="ctitle"> Te interesa el proyecto ...</h3>
      {{Form::open(array('route'=>'guardar.estudiante', 'method'=>'POST'))}}
-	    <div class="form-group">
+	   <div class="row">
+	   	<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+	    	<div class="form-group">
+
 			{!!Form::label('Nombre:')!!}
 			{!!Form::text('nombre', null, ['class'=>'form-control text-uppercase'])!!}
+			</div>
 		</div>
-		<div class="form-group">
+		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+	    	<div class="form-group">
+
 			{!!Form::label('Apellidos:')!!}
 			{!!Form::text('apellidos', null, ['class'=>'form-control text-uppercase'])!!}
+			</div>
 		</div>
-		<div class="form-group">
-			{!!Form::label('email:')!!}
-			{!!Form::email('email', null, ['class'=>'form-control text-uppercase'])!!}
-		</div>
-		<div class="form-group">
-			{!!Form::label('Telefono de contacto:')!!}
-			{!!Form::text('telefono', null, ['class'=>'form-control text-uppercase'])!!}
-			{!!Form::hidden('idProyecto',$proyecto->idProyecto, ['class'=>'form-control text-uppercase'])!!}
-		</div> 		
+	 	</div>
+		<div class="row">
+		   	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
+			<div class="form-group">
+				{!!Form::label('email:')!!}
+				{!!Form::email('email', null, ['class'=>'form-control text-uppercase'])!!}
+			</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+			<div class="form-group">
+				{!!Form::label('Telefono de contacto:')!!}
+				{!!Form::text('telefono', null, ['class'=>'form-control text-uppercase'])!!}
+				{!!Form::hidden('idProyecto',$proyecto->idProyecto, ['class'=>'form-control text-uppercase'])!!}
+			</div>
+			</div> 			
+		</div> 			
 		<div class="form-group">
 			{!!Form::submit('Guardar',['class'=>'btn btn-danger'])!!}
 		</div>

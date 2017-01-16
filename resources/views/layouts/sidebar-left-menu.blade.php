@@ -7,7 +7,7 @@
 
 		<li class="">
 			<a href="{{route('user.index')}}">
-				<i class="fa fa-users icon-sidebar"></i>
+				<i class="fa fa-users fa-2x  icon-sidebar"></i>
 				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
 				Gestion Usuarios
 				</a>
@@ -15,7 +15,7 @@
 
 		<li class="">
 			<a href="{{route('proyectos.index')}}">
-				<i class="fa fa-users icon-sidebar"></i>
+				<i class="fa fa-clipboard fa-2x  icon-sidebar"></i>
 				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
 				Gestion de Proyectos
 				</a>
@@ -23,7 +23,7 @@
 
 		<li class="">
 			<a href="{{route('noticias.index')}}">
-				<i class="fa fa-users icon-sidebar"></i>
+				<i class="fa fa-newspaper-o fa-2x  icon-sidebar"></i>
 				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
 				Gestion de Noticias
 				</a>
@@ -31,7 +31,7 @@
 
 		<li class="">
 			<a href="{{route('interesados')}}">
-				<i class="fa fa-users icon-sidebar"></i>
+				<i class="fa fa-child fa-2x icon-sidebar"></i>
 				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
 				Estudiantes Interesados
 				</a>

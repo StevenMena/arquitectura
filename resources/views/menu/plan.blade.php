@@ -11,8 +11,13 @@
 	</div><!-- /blue -->
 
 <div class="container"> <!-- /container para el pensum -->
-	<div class="col-md-6 col-md-offset-3">
-		{!!Html::image('img/pensum.jpg')!!} <!-- cambiar imagen por una de mejor calidad -->
+
+	<div align="center">
+	<a href="https://www.academica.ues.edu.sv/consultas/plan_estudio/diagrama_carrera.php?carrera=A10507-1998&facultad=ingenieria" target="_blank"><img src="img/pensum.png"></a>
+	<p><a href="https://www.academica.ues.edu.sv/consultas/plan_estudio/diagrama_carrera.php?carrera=A10507-1998&facultad=ingenieria" target="_blank">PLAN DE ESTUDIOS DE LA CARRERA DE ARQUITECTURA</a></p>
+	</div>
+	
+		 <!-- cambiar imagen por una de mejor calidad -->
 	</div>
 </div>
 
