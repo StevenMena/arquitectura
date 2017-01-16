@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\NoticiaCreateRequest;
 use App\Http\Controllers\Controller;
 use App\Noticias;
 use Session;
@@ -37,7 +38,7 @@ class NoticiasController extends Controller
     	return view('noticias.crear', $data);
     }
 
-    public function store(Request $request){
+    public function store(NoticiaCreateRequest $request){
       $conteo=Noticias::all();
       if(count($conteo)<20)
       {

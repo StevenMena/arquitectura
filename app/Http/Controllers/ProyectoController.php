@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ProyectoCreateRequest;
 use App\tiposProyectos;
 use App\Proyectos;
 use App\estudiantes;
@@ -75,7 +76,7 @@ class proyectoController extends Controller
 
 
 
-    public function store(Request $request){
+    public function store(ProyectoCreateRequest $request){
 
     //dd($request->all());
     $file=$request['path'];
