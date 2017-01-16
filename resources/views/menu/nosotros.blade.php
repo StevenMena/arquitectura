@@ -48,16 +48,15 @@
 	 <div class="container mtb">
 	 	<div class="row centered">
 		 	<h3 class="mb">Autoridades de la Escuela</h3>
-
-		 	<div class="col-lg-3 col-md-3 col-sm-3">
+		 
+		 	<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="he-wrap tpl6">
-				<img src="img/team/user.png" alt="">
+				<img src="img/team/director.jpg" alt="">
 				<i class="fa fa-user-circle-o"></i>
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
-                            <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
+                            <h3 class="a1" data-animate="fadeInDown">Contactame :</h3>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
-                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
                     	</div><!-- he bg -->
 					</div><!-- he view -->
 				</div><!-- he wrap -->
@@ -66,49 +65,33 @@
 				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
 				<div class="hline"></div>
 		 	</div><! --/col-lg-3 -->
-
-		 	<div class="col-lg-3 col-md-3 col-sm-3">
+		 	<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="he-wrap tpl6">
 				<img src="img/team/user.png" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
-                            <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
+                            <h3 class="a1" data-animate="fadeInDown">Contactame :</h3>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
-                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
+                            
                     	</div><!-- he bg -->
 					</div><!-- he view -->
 				</div><!-- he wrap -->
 				<h4>Arq. Francisco Álvarez</h4>
-				<h5 class="ctitle">Subdirector de Escuela</h5>
+				<h5 class="ctitle">Subdirector y Secretario de Escuela</h5>
 				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
 				<div class="hline"></div>
+
 		 	</div><! --/col-lg-3 -->
 
-		 	<div class="col-lg-3 col-md-3 col-sm-3">
+
+		 	<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="he-wrap tpl6">
 				<img src="img/team/user.png" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
-                            <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
+                            <h3 class="a1" data-animate="fadeInDown">Contactame:</h3>
                             <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
-                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
-                    	</div><!-- he bg -->
-					</div><!-- he view -->
-				</div><!-- he wrap -->
-				<h4>Arq. Francisco Álvarez</h4>
-				<h5 class="ctitle">Secretario de Escuela</h5>
-				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-				<div class="hline"></div>
-		 	</div><! --/col-lg-3 -->
-
-		 	<div class="col-lg-3 col-md-3 col-sm-3">
-				<div class="he-wrap tpl6">
-				<img src="img/team/user.png" alt="">
-					<div class="he-view">
-						<div class="bg a0" data-animate="fadeIn">
-                            <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
-                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
-                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-twitter"></i></a>
+                           
                     	</div><!-- he bg -->
 					</div><!-- he view -->
 				</div><!-- he wrap -->
@@ -119,6 +102,7 @@
 		 	</div><! --/col-lg-3 -->
 
 	 	</div><! --/row -->
+	 	
 	 </div><! --/container -->
 
 	<!-- *****************************************************************************************************************
