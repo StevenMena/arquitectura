@@ -4,21 +4,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="ECM">
-		<title>~Arquitectura~</title>
- 
+		<title>ASEA Admon</title>
+
 		<!-- BOOTSTRAP CSS (REQUIRED ALL PAGE)-->
-		{!! Html::style('css/bootstrap.css') !!} 
+		{!! Html::style('css/bootstrap.css') !!}
 		<!--<link href="" rel="stylesheet">-->
-		
+
 
 
 		<!-- MAIN CSS (REQUIRED ALL PAGE)-->
-		{!! Html::style('plugins/font-awesome/css/font-awesome.min.css') !!} 
-		{!! Html::style('css/style-admin.css') !!} 
-		{!! Html::style('css/style-responsive.css') !!} 
-		{!! Html::style('plugins/datatable/css/bootstrap.datatable.min.css') !!} 
+		{!! Html::style('plugins/font-awesome/css/font-awesome.min.css') !!}
+		{!! Html::style('css/style-admin.css') !!}
+		{!! Html::style('css/style-responsive.css') !!}
+		{!! Html::style('plugins/datatable/css/bootstrap.datatable.min.css') !!}
 
- 		
+
 		@yield('css')
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +27,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
- 
+
 	<body class="tooltips">
 		<!--
 		===========================================================
@@ -35,14 +35,14 @@
 		===========================================================
 		-->
 		<div class="wrapper">
-			
+
 			@include('layouts.top-nav')
-			
-			@include('layouts.sidebar-left-menu')	
+
+			@include('layouts.sidebar-left-menu')
 			<!-- BEGIN PAGE CONTENT -->
 			<div class="page-content">
 				<div class="container-fluid">
-				
+
 				<!-- Begin page heading -->
 				<h1 class="page-heading">{{ $title }} <small>{{ $subtitle }}</small></h1>
 				<!-- End page heading -->
@@ -59,35 +59,36 @@
 								@endif
 							@endfor
 						@else
-							<li class="active">{{ $breadcrumb[0]['nom']}}</li>					
+							<li class="active">{{ $breadcrumb[0]['nom']}}</li>
 						@endif
 					</ol>
 					<!-- End breadcrumb -->
-				@endif					
-					
+				@endif
+
 				@yield('contenido')
-								
+
 				</div><!-- /.container-fluid -->
 
 	<!-- TABLA ESTUDIANTES -->
-<h3> ESTUDIANTES INTERESADOS EN PROYECTOS</h3>
-<div class="table-responsive">
-    <table class="table table-striped table-hover" id="tr-est" style="font-size:13px;" width="100%">
-        <thead class="the-box dark full">
-            <tr>
-                <th>ID proyecto</th>
-		  		<th>Nombre Proyecto</th>
-		  		<th>Estudiante</th>
-		  		<th>Correo</th>
-		  		<th>Telefono</th>
-		  		<th>Fecha Ingreso</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-    </div><!-- /.table-responsive -->
-
-
+<div class="container-fluid">
+	<div class="the-box">
+		<h3> ESTUDIANTES INTERESADOS EN PROYECTOS</h3>
+		<div class="table-responsive">
+	    <table class="table table-striped table-hover" id="tr-est" style="font-size:13px;" width="100%">
+	        <thead class="the-box dark full">
+	          <tr>
+		          <th>ID proyecto</th>
+				  		<th>Nombre Proyecto</th>
+				  		<th>Estudiante</th>
+				  		<th>Correo</th>
+				  		<th>Telefono</th>
+				  		<th>Fecha Ingreso</th>
+	          </tr>
+	        </thead>
+	        <tbody></tbody>
+	    </table>
+	  </div><!-- /.table-responsive -->
+	</div>
 </div>
 
 
@@ -97,18 +98,18 @@
 					<a href="#"></a>
 				</footer>
 				<!-- END FOOTER -->
-				
-				
+
+
 			</div><!-- /.page-content -->
 		</div><!-- /.wrapper -->
 		<!-- END PAGE CONTENT -->
-			
+
 		<!--
 		===========================================================
 		END PAGE
 		===========================================================
 		-->
-		
+
 		<!--
 		===========================================================
 		Placed at the end of the document so the pages load faster
@@ -125,39 +126,39 @@
 		{!! Html::script('plugins/datatable/js/bootstrap.datatable.js') !!}
 
 <script>
-    
+
 $( document ).ready(function(){
    var table = $('#tr-est').DataTable({
         filter: true,
         serverSide: true,
-        
+
         ajax: '{!! route('dt.row.data.estudiantes') !!}',
-        columns: [  
-            
-            
+        columns: [
+
+
             {data: 'idProyecto', name: 'pry.idProyecto'},
             {data: 'nombreProyecto', name: 'pry.nombreProyecto'},
             {data: 'nombre', name: 'nombre'},
             {data: 'email', name: 'email'},
             {data: 'telefono', name: 'telefono'},
             {data: 'fechaCreacion', name: 'pry.fechaCreacion'}
-                                  
+
         ],
-    
-        
+
+
         language: {
             "url": "{{ asset('plugins/datatable/lang/es.json') }}"
         },
         order: [[1, 'desc']]
-       
+
     });
 });
 </script>
 
 
- 
+
 		<!-- PLUGINS -->
-		
+
 
 		@yield('js')
 
