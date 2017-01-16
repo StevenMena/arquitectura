@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="img/logo-asea.ico">
+    <!-- <link rel="icon" type="image/png" href="assets/img/logo_asea.png" /> -->
 
     <title>ASEA</title>
 
@@ -31,7 +32,7 @@
       margin: auto;
   }
   </style>
- 
+
     {!!Html::script('js/script.js')!!}
     @yield('head')
 
@@ -76,7 +77,7 @@
             <li><a href="{{route('contacto')}}">CONTACTO</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-</div>     
+</div>
 
     </div>
 
@@ -89,7 +90,7 @@
   <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          
+
         </div>
         <div align="center" class="col-lg-4">
           <p>
@@ -101,34 +102,34 @@
             <a href="{{route('login.index')}}" target="_blank">Administración</a>
           </p>
         </div>
-      
+
       </div><! --/row -->
     </div><! --/container -->
    </div>
 
 
-   
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+
     {!!Html::script('js/jquery.min.js')!!}
     {!!Html::script('js/bootstrap.min.js')!!}
-   
+
     {!!Html::script('js/jquery.hoverdir.js')!!}
     {!!Html::script('js/jquery.hoverex.min.js')!!}
     {!!Html::script('js/jquery.prettyPhoto.js')!!}
     {!!Html::script('js/jquery.isotope.min.js')!!}
     {!!Html::script('js/custom.js')!!}
-    
+
     @yield('js')
 
 <script>
 /*footer
       $("#footerwrap").load("footer.html");
-      
+
       $("#navbar").load("navbar.html");
-      
+
 */
 // Portfolio
 (function($) {
@@ -136,11 +137,11 @@
   var $container = $('.portfolio'),
     $items = $container.find('.portfolio-item'),
     portfolioLayout = 'fitRows';
-    
+
     if( $container.hasClass('portfolio-centered') ) {
       portfolioLayout = 'masonry';
     }
-        
+
     $container.isotope({
       filter: '*',
       animationEngine: 'best-available',
@@ -153,12 +154,12 @@
     masonry: {
     }
     }, refreshWaypoints());
-    
+
     function refreshWaypoints() {
       setTimeout(function() {
-      }, 1000);   
+      }, 1000);
     }
-        
+
     $('nav.portfolio-filter ul a').on('click', function() {
         var selector = $(this).attr('data-filter');
         $container.isotope({ filter: selector }, refreshWaypoints());
@@ -166,11 +167,11 @@
         $(this).addClass('active');
         return false;
     });
-    
-    function getColumnNumber() { 
-      var winWidth = $(window).width(), 
+
+    function getColumnNumber() {
+      var winWidth = $(window).width(),
       columnNumber = 1;
-    
+
       if (winWidth > 1200) {
         columnNumber = 5;
       } else if (winWidth > 950) {
@@ -183,31 +184,31 @@
         columnNumber = 1;
       }
         return columnNumber;
-      }       
-      
+      }
+
       function setColumns() {
-        var winWidth = $(window).width(), 
-        columnNumber = getColumnNumber(), 
+        var winWidth = $(window).width(),
+        columnNumber = getColumnNumber(),
         itemWidth = Math.floor(winWidth / columnNumber);
-        
-        $container.find('.portfolio-item').each(function() { 
-          $(this).css( { 
-          width : itemWidth + 'px' 
+
+        $container.find('.portfolio-item').each(function() {
+          $(this).css( {
+          width : itemWidth + 'px'
         });
       });
     }
-    
-    function setPortfolio() { 
+
+    function setPortfolio() {
       setColumns();
       $container.isotope('reLayout');
     }
-      
-    $container.imagesLoaded(function () { 
+
+    $container.imagesLoaded(function () {
       setPortfolio();
     });
-    
-    $(window).on('resize', function () { 
-    setPortfolio();          
+
+    $(window).on('resize', function () {
+    setPortfolio();
   });
 })(jQuery);
 </script>

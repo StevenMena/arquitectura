@@ -54,7 +54,7 @@
 		 				<input type="text" class="form-control" placeholder="Search something">
 		 			</p>-->
 
-		 		<div class="spacing"></div>
+		 		<!-- <div class="spacing"></div> -->
 
 		 		<h4>Proyectos</h4>
 		 		<div class="hline"></div>
