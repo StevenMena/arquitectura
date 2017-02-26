@@ -22,7 +22,7 @@
 	 <div class="container mtb">
 	 	<div class="row">
 	 		<div class="col-lg-6">
-	 			<img class="img-responsive" src="/img/agency.jpg" alt="">
+	 			<img class="img-responsive" src="img/agency.jpg" alt="">
 	 		</div>
 
 	 		<div class="col-lg-6">
@@ -51,7 +51,7 @@
 		 
 		 	<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="he-wrap tpl6">
-				<img src="img/team/director.jpg" alt="">
+				<img src="img/team/Director.jpg" alt="">
 				<i class="fa fa-user-circle-o"></i>
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
@@ -67,7 +67,7 @@
 		 	</div><! --/col-lg-3 -->
 		 	<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="he-wrap tpl6">
-				<img src="img/team/user.png" alt="">
+				<img src="img/team/Secretario.jpg" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contactame :</h3>
@@ -76,7 +76,7 @@
                     	</div><!-- he bg -->
 					</div><!-- he view -->
 				</div><!-- he wrap -->
-				<h4>Arq. Francisco Álvarez</h4>
+				<h4>Arq. Francisco Alvarez Ferrufino</h4>
 				<h5 class="ctitle">Subdirector y Secretario de Escuela</h5>
 				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
 				<div class="hline"></div>
@@ -86,7 +86,7 @@
 
 		 	<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="he-wrap tpl6">
-				<img src="img/team/user.png" alt="">
+				<img src="img/team/JefeComunicaciones.jpg" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contactame:</h3>
@@ -95,13 +95,113 @@
                     	</div><!-- he bg -->
 					</div><!-- he view -->
 				</div><!-- he wrap -->
-				<h4>Arq. Maria Sanchez de Ibáñez</h4>
+				<h4>Arqta.Maria Eugenia Sanchez de Ibañez</h4>
 				<h5 class="ctitle">Coordinadora de Trabajos de Graduación</h5>
 				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
 				<div class="hline"></div>
 		 	</div><! --/col-lg-3 -->
 
 	 	</div><! --/row -->
+
+    <br/><br/>
+    <div class="row centered">
+		 	<h3 class="mb">Jefes de Departamentos</h3>
+		 
+		 	<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="he-wrap tpl6">
+				<img src="img/team/JefeUrbanismo.jpg" alt="">
+				<i class="fa fa-user-circle-o"></i>
+					<div class="he-view">
+						<div class="bg a0" data-animate="fadeIn">
+                            <h3 class="a1" data-animate="fadeInDown">Contactame :</h3>
+                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+                    	</div><!-- he bg -->
+					</div><!-- he view -->
+				</div><!-- he wrap -->
+				<h4>Arq. Eduardo Orlando Gongora</h4>
+				<h5 class="ctitle">Jefe Depto. de Urbanismo</h5>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+				<div class="hline"></div>
+		 	</div><! --/col-lg-3 -->
+		 	<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="he-wrap tpl6">
+				<img src="img/team/JefeTeoria.jpg" alt="">
+					<div class="he-view">
+						<div class="bg a0" data-animate="fadeIn">
+                            <h3 class="a1" data-animate="fadeInDown">Contactame :</h3>
+                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+                            
+                    	</div><!-- he bg -->
+					</div><!-- he view -->
+				</div><!-- he wrap -->
+				<h4>Arqta. Gilda Elizabeth Benavides</h4>
+				<h5 class="ctitle">Jefe Depto. de Teoria e Historia</h5>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+				<div class="hline"></div>
+
+		 	</div><! --/col-lg-3 -->
+
+
+		 	<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="he-wrap tpl6">
+				<img src="img/team/JefeTecnologia.jpg" alt="">
+					<div class="he-view">
+						<div class="bg a0" data-animate="fadeIn">
+                            <h3 class="a1" data-animate="fadeInDown">Contactame:</h3>
+                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+                           
+                    	</div><!-- he bg -->
+					</div><!-- he view -->
+				</div><!-- he wrap -->
+				<h4>Arq. Miguel Angel Perez Ramos</h4>
+				<h5 class="ctitle">Jefe Depto. de Tecnologia de la Construccion</h5>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+				<div class="hline"></div>
+		 	</div><! --/col-lg-3 -->
+    
+
+	 	</div><! --/row -->
+
+
+    <br/><br/>
+    <div class="row centered">
+		 	<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="he-wrap tpl6">
+				<img src="img/team/JefeComunicaciones.jpg" alt="">
+				<i class="fa fa-user-circle-o"></i>
+					<div class="he-view">
+						<div class="bg a0" data-animate="fadeIn">
+                            <h3 class="a1" data-animate="fadeInDown">Contactame :</h3>
+                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+                    	</div><!-- he bg -->
+					</div><!-- he view -->
+				</div><!-- he wrap -->
+				<h4>Arqta.Maria Eugenia Sanchez de Ibañez</h4>
+				<h5 class="ctitle">Jefe Depto. de Comunicaciones</h5>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+				<div class="hline"></div>
+		 	</div><! --/col-lg-3 -->
+		 	<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="he-wrap tpl6">
+				<img src="img/team/JefeProyectacion.jpg" alt="">
+					<div class="he-view">
+						<div class="bg a0" data-animate="fadeIn">
+                            <h3 class="a1" data-animate="fadeInDown">Contactame :</h3>
+                            <a href="#" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+                            
+                    	</div><!-- he bg -->
+					</div><!-- he view -->
+				</div><!-- he wrap -->
+				<h4>Arq. Jorge salom Guerrero</h4>
+				<h5 class="ctitle">Jefe Depto. de Talleres de Proyectacion</h5>
+				<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+				<div class="hline"></div>
+
+		 	</div><! --/col-lg-3 -->
+    
+    
+	 	</div><! --/row -->
+
 	 	
 	 </div><! --/container -->
 

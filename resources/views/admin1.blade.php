@@ -35,8 +35,7 @@
 		===========================================================
 		-->
 		<div class="wrapper">
-
-			@include('layouts.top-nav')
+        	@include('layouts.top-nav')
 
 			@include('layouts.sidebar-left-menu')
 			<!-- BEGIN PAGE CONTENT -->

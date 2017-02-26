@@ -2,6 +2,8 @@
 
 @section('content')
 
+    <br>
+    <br>
 
   <div class="container"><!-- contenedor slide-->
     <br>
@@ -16,12 +18,12 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/slide/foto1.jpg" width="460" height="345">
+        <img src="img/slide/inicio.jpg" style="width:460; height:345;">
         <p style="text-align: center">ESCUELA DE ARQUITECTURA</p>
       </div>
       @foreach($noticias as $noticia)
       <div class="item">
-        <img src="data:image/jpg;base64,{{base64_encode($noticia->archivo)}}" width="460" height="345">
+        <img src="data:image/jpg;base64,{{base64_encode($noticia->archivo)}}" style="width:460; height:345;">
         <p style="text-align: center">{!!$noticia->textoNoticia!!}</p>
       </div>
       @endforeach
@@ -268,11 +270,11 @@
       <div class="portfolio-centered col-md-12" style="padding: 5% 5% 0 5%;">
             <div class="portfolio-item col-md-4">
               <div class="he-wrap tpl6 item">
-                <img src="img/AreasAccion/planificacionUrbana.jpg" alt="">
+                <img src="img/AreasAccion/planificacionUrb.jpg" alt="">
                   <div class="he-view">
                     <div class="bg a0" data-animate="fadeIn">
                       <h3 class="a1" data-animate="fadeInDown">Planificación urbana y territorial</h3>
-                        <a data-rel="prettyPhoto" href="img/AreasAccion/planificacionUrbana.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        <a data-rel="prettyPhoto" href="img/AreasAccion/planificacionUrb.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                         <!-- Button trigger modal -->
                         <a data-toggle="modal" data-target="#myModal1" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                     </div><!-- he bg -->
@@ -281,7 +283,7 @@
             </div>
             <div class="portfolio-item col-md-4">
               <div class="he-wrap tpl6 item">
-                <img src="img/AreasAccion/disenoArq.jpg" alt="">
+                <img src="img/AreasAccion/diseñoArq.jpg" alt="">
                   <div class="he-view">
                     <div class="bg a0" data-animate="fadeIn">
                       <h3 class="a1" data-animate="fadeInDown">Diseño y administración de proyectos arquitectónicos y urbanísticos   </h3>

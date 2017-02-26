@@ -17,7 +17,7 @@
 	 	<div class="row">
 	 	
 	 		<! -- BLOG POSTS LIST -->
-	 		<p><img class="img-responsive" src="img/fases.jpg"></p>
+	 		<p><img class="img-responsive" src="img/AreasCurriculares/inicioAreas.jpg"></p>
 	 		<div class="col-lg-8">
 	 			<! -- Blog Post 1 -->
 		 		<p>El contenido de la carrera se divide en cinco áreas que son:</p>
@@ -26,7 +26,7 @@
 		 		<!--<p><csmall>Posted: April 25, 2014.</csmall> | <csmall2>By: Admin - 3 Comments</csmall2></p>-->
 		 		<p>Forma en el estudiante la capacidad para un análisis crítico de la realidad nacional y de Arquitectura Universal además forma el pensamiento que orientará las opciones en el trabajo profesional.</p>
 
-		 		<p><img class="img-responsive" src="img/fase1.jpg"></p>
+		 		<p><img class="img-responsive" src="img/AreasCurriculares/areaTeoria.jpg"></p>
 		 		
 		 		<!--<p><a href="single-post.html">[Read More]</a></p>-->
 		 		<div class="hline"></div>
@@ -40,7 +40,7 @@
 		 		<p>Capacita al estudiante para la interpretación y expresión gráfica de los diferentes aspectos del medio y de los proyectos arquitectónicos. Adiestrándolo en el manejo de elementos y técnicas de representación y exposición de la información o de los contenidos que quiere comunicar.
 				</p>
 
-		 		<p><img class="img-responsive" src="img/fase1.jpg"></p>
+		 		<p><img class="img-responsive" src="img/AreasCurriculares/areaComunicacion.jpg"></p>
 		 		
 		 		<!--<p><a href="single-post.html">[Read More]</a></p>-->
 		 		<div class="hline"></div>
@@ -54,7 +54,7 @@
 
 				</p>
 
-		 		<p><img class="img-responsive" src="img/fase1.jpg"></p>
+		 		<p><img class="img-responsive" src="img/AreasCurriculares/areaUrbanismo.jpg"></p>
 		 		
 		 		<!--<p><a href="single-post.html">[Read More]</a></p>-->
 		 		<div class="hline"></div>
@@ -68,7 +68,7 @@
 		 		<p>Enseña el conocimiento de los elementos y técnicas constructivas que permiten la producción de obras arquitectónicas a diferente escala. El alumno es orientado hacia el aprovechamiento racional de los recursos materiales y humanos de nuestro país. Se utiliza el concepto y manejo de transferencia tecnológica, para que le permita asimilar soluciones foráneas, adaptándolas sin desecharlas totalmente.
 				</p>
 
-		 		<p><img class="img-responsive" src="img/fase1.jpg"></p>
+		 		<p><img class="img-responsive" src="img/AreasCurriculares/areaTecnologia.jpg"></p>
 		 		
 		 		<!--<p><a href="single-post.html">[Read More]</a></p>-->
 		 		<div class="hline"></div>
@@ -83,7 +83,7 @@
 
 				</p>
 
-		 		<p><img class="img-responsive" src="img/fase1.jpg"></p>
+		 		<p><img class="img-responsive" src="img/AreasCurriculares/areaProyectacion.jpg"></p>
 		 		
 		 		<!--<p><a href="single-post.html">[Read More]</a></p>-->
 		 		<div class="hline"></div>
