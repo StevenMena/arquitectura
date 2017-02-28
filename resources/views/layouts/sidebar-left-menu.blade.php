@@ -5,24 +5,16 @@
 			<a href="#"><i class="fa fa-dashboard icon-sidebar"></i>Inicio</a>
 		</li>
 
-		@if(Session::get('tipo')=='1')
-		<li class="" style="display: none">
+	@if(Session::get('tipo')==1)
+		<li class="">
 		  <a href="{{route('user.index')}}">
 				<i class="fa fa-users fa-2x  icon-sidebar"></i>
 				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
 				Gestion Usuarios
 				</a>
 		    </li>
-		  @else
-		    <li class="" style="display: none">
-		  <a href="{{route('user.index')}}">
-				<i class="fa fa-users fa-2x  icon-sidebar"></i>
-				<i class="fa fa-angle-right chevron-icon-sidebar"></i>
-				Gestion Usuarios
-				</a>
-		    </li>
-		  @endif
-			
+	@endif  
+		   
 		<li class="">
 			<a href="{{route('proyectos.index')}}">
 				<i class="fa fa-clipboard fa-2x  icon-sidebar"></i>

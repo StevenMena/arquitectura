@@ -31,9 +31,10 @@ class LoginController extends Controller
   		//dd(Auth::user()->nombre);
       $tipo=DB::table('usuarios')
             ->select('id_tipoUsuario')
-            ->where('usuario',$datos['usuariotxt'])
-            ->get();
-      $data['tipo']=$tipo;
+            ->where('usuario',$datos->usuariotxt)
+            ->first();
+      //dd($tipo);
+      Session::put('tipo',$tipo->id_tipoUsuario);
 
       return view('admin1',$data);
   	}

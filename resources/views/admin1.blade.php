@@ -65,7 +65,7 @@
 				@endif
 
 				@yield('contenido')
-
+				
 				</div><!-- /.container-fluid -->
 
 
